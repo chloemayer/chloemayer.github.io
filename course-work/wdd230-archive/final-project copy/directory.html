@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The SLC Chamber of Commerce Directory provides a list of businesses who are members of the chamber.">
+    <title>Directory | SLC Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/slc-logo.png" alt="logo"></a> 
+        </div>
+        <nav>
+            <ul class="navU">
+                <li><a href="#" onclick="navButton()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li id="currentpg"><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <div>
+            <section id="drctIcons">
+                <h1>Local Business Directory</h1>
+                <div>
+                    <img src="images/grid.png" alt="grid view" onclick="gridView()">
+                    <img src="images/lines.png" alt="list view" onclick="listView()">
+                </div>
+            </section>
+            <div id="bCards" class="x">
+            
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Salt Lake Chamber of Commerce | &copy; 2021 | <a href="attribution.html">Attributions</a> | Last Modified On: <span id="lastMod"></span></p>
+    </footer>
+    <script src="js/directory.js" defer></script>
+</body>
+</html>

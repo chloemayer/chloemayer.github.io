@@ -1,0 +1,15 @@
+span.help {
+    color: red;
+}
+
+span.help::before {
+    content: "(";
+}
+
+span.help::after {
+    content: ")";
+}
+
+fieldset p:nth-of-type(n+3) {
+    display: none;
+}

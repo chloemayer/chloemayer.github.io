@@ -1,0 +1,167 @@
+
+main.css
+  2:1   ✖  Expected empty line before rule                                               rule-empty-line-before            
+  4:12  ✖  Unexpected unit                                                               length-zero-no-unit               
+  4:15  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+  5:3   ✖  Expected empty line before at-rule                                            at-rule-empty-line-before         
+  5:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+  6:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+  7:7   ✖  Expected indentation of 4 spaces                                              indentation                       
+  8:7   ✖  Expected indentation of 4 spaces                                              indentation                       
+  8:38  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+  8:39  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+  8:41  ✖  Expected newline after "}"                                                    block-closing-brace-newline-after 
+  8:41  ✖  Unexpected whitespace at end of line                                          no-eol-whitespace                 
+ 10:3   ✖  Expected newline after ","                                                    selector-list-comma-newline-after 
+ 11:30  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 14:21  ✖  Expected "#6495ED" to be "#6495ed"                                            color-hex-case                    
+ 16:17  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 17:3   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 17:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 18:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 18:24  ✖  Expected "#FAEBD7" to be "#faebd7"                                            color-hex-case                    
+ 19:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 19:20  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 20:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 20:14  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 20:17  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 21:3   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 21:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 22:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 22:12  ✖  Expected "#FAEBD7" to be "#faebd7"                                            color-hex-case                    
+ 23:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 23:27  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 26:18  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 26:27  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 26:30  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 27:3   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 27:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 28:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 29:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 29:14  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 30:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 30:15  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 30:18  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 31:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 31:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 32:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 32:25  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 33:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 33:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 34:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 34:14  ✖  Expected "#FAEBD7" to be "#faebd7"                                            color-hex-case                    
+ 34:22  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 35:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 35:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 36:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 37:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 37:34  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 38:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 38:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 39:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 39:14  ✖  Expected "#DEB887" to be "#deb887"                                            color-hex-case                    
+ 39:22  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 42:21  ✖  Expected "#FAEBD7" to be "#faebd7"                                            color-hex-case                    
+ 43:17  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 49:36  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 53:12  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 53:16  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 53:25  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 53:28  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 54:3   ✖  Expected empty line before at-rule                                            at-rule-empty-line-before         
+ 54:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 55:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 56:7   ✖  Expected indentation of 4 spaces                                              indentation                       
+ 56:22  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 56:24  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 57:3   ✖  Expected selector "h2 a" to come before selector "nav ul a:visited"           no-descending-specificity         
+ 57:3   ✖  Expected selector "h2 a" to come before selector "nav ul a:hover"             no-descending-specificity         
+ 57:3   ✖  Expected selector "h2 a" to come before selector "nav ul a:active"            no-descending-specificity         
+ 57:3   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 57:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 58:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 59:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 59:27  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 60:5   ✖  Expected selector "h2 a:visited" to come before selector "nav ul a:visited"   no-descending-specificity         
+ 60:5   ✖  Expected selector "h2 a:visited" to come before selector "nav ul a:hover"     no-descending-specificity         
+ 60:5   ✖  Expected selector "h2 a:visited" to come before selector "nav ul a:active"    no-descending-specificity         
+ 60:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 60:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 61:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 61:20  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 62:5   ✖  Expected selector "h2 a:hover" to come before selector "nav ul a:visited"     no-descending-specificity         
+ 62:5   ✖  Expected selector "h2 a:hover" to come before selector "nav ul a:hover"       no-descending-specificity         
+ 62:5   ✖  Expected selector "h2 a:hover" to come before selector "nav ul a:active"      no-descending-specificity         
+ 62:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 62:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 63:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 63:14  ✖  Expected "#6495ED" to be "#6495ed"                                            color-hex-case                    
+ 64:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 64:34  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 65:5   ✖  Expected selector "h2 a:active" to come before selector "nav ul a:visited"    no-descending-specificity         
+ 65:5   ✖  Expected selector "h2 a:active" to come before selector "nav ul a:hover"      no-descending-specificity         
+ 65:5   ✖  Expected selector "h2 a:active" to come before selector "nav ul a:active"     no-descending-specificity         
+ 65:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 65:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 66:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 66:14  ✖  Expected "#DEB887" to be "#deb887"                                            color-hex-case                    
+ 66:22  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 69:12  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 70:19  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 71:3   ✖  Expected empty line before at-rule                                            at-rule-empty-line-before         
+ 71:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 72:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 73:7   ✖  Expected indentation of 4 spaces                                              indentation                       
+ 73:23  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 73:25  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 74:3   ✖  Expected selector "p a" to come before selector "nav ul a:visited"            no-descending-specificity         
+ 74:3   ✖  Expected selector "p a" to come before selector "nav ul a:hover"              no-descending-specificity         
+ 74:3   ✖  Expected selector "p a" to come before selector "nav ul a:active"             no-descending-specificity         
+ 74:3   ✖  Expected selector "p a" to come before selector "h2 a:visited"                no-descending-specificity         
+ 74:3   ✖  Expected selector "p a" to come before selector "h2 a:hover"                  no-descending-specificity         
+ 74:3   ✖  Expected selector "p a" to come before selector "h2 a:active"                 no-descending-specificity         
+ 74:3   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 74:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 75:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 75:12  ✖  Expected "#6495ED" to be "#6495ed"                                            color-hex-case                    
+ 76:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 76:27  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 77:5   ✖  Expected selector "p a:visited" to come before selector "nav ul a:visited"    no-descending-specificity         
+ 77:5   ✖  Expected selector "p a:visited" to come before selector "nav ul a:hover"      no-descending-specificity         
+ 77:5   ✖  Expected selector "p a:visited" to come before selector "nav ul a:active"     no-descending-specificity         
+ 77:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 77:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 78:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 78:14  ✖  Expected "#6495ED" to be "#6495ed"                                            color-hex-case                    
+ 78:22  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 79:5   ✖  Expected selector "p a:hover" to come before selector "nav ul a:visited"      no-descending-specificity         
+ 79:5   ✖  Expected selector "p a:hover" to come before selector "nav ul a:hover"        no-descending-specificity         
+ 79:5   ✖  Expected selector "p a:hover" to come before selector "nav ul a:active"       no-descending-specificity         
+ 79:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 79:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 80:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 80:34  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 81:5   ✖  Expected selector "p a:active" to come before selector "nav ul a:visited"     no-descending-specificity         
+ 81:5   ✖  Expected selector "p a:active" to come before selector "nav ul a:hover"       no-descending-specificity         
+ 81:5   ✖  Expected selector "p a:active" to come before selector "nav ul a:active"      no-descending-specificity         
+ 81:5   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 81:5   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 82:7   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 82:14  ✖  Expected "#DEB887" to be "#deb887"                                            color-hex-case                    
+ 82:22  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 85:12  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 87:15  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 88:3   ✖  Expected empty line before at-rule                                            at-rule-empty-line-before         
+ 88:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 89:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 90:7   ✖  Expected indentation of 4 spaces                                              indentation                       
+ 90:23  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 90:25  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 95:12  ✖  Unexpected unit                                                               length-zero-no-unit               
+ 95:20  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 96:3   ✖  Expected empty line before rule                                               rule-empty-line-before            
+ 96:3   ✖  Expected indentation of 0 spaces                                              indentation                       
+ 97:5   ✖  Expected indentation of 2 spaces                                              indentation                       
+ 97:17  ✖  Expected newline before "}" of a multi-line block                             block-closing-brace-newline-before
+ 97:56  ✖  Unexpected missing end-of-source newline                                      no-missing-end-of-source-newline
+

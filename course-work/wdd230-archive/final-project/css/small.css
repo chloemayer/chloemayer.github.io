@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bitter&family=Spartan&display=swap');
+
+#wwBanner {
+    display: none;
+}
+
+header div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+#logo img {
+    max-width: 80%;
+}
+
+.navU {
+    list-style: none;
+    margin: 0px;
+    background-color: #5D6B62;
+    padding: 0px;
+}
+
+.navU a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
+    font-family: 'Spartan', sans-serif;
+}
+
+.navU li {
+    display: none;
+
+}
+
+.navU li:first-child {
+    display: block;
+}
+
+.navU li:hover {
+    background-color: #F5F6F3;
+    border: 1px solid #455049;
+}
+
+.navU li a:hover {
+    color: #455049;
+    font-weight: bold;
+}
+
+#currentpg {
+    background-color: #73847A;
+}
+
+#currentpg a {
+    color: black;
+}
+
+main {
+    background-color: #F5F6F3;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5em;
+}
+
+#centerMain {
+    justify-items: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Spartan', sans-serif;
+}
+
+ p {
+    font-family: 'Bitter', serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 5px;
+ }
+
+ ul {
+    font-family: 'Bitter', serif;
+ }
+
+#homeHero picture {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#homeHero picture img {
+    width: 100%;
+}
+
+#homeHero h3 {
+    padding-left: 15px;
+}
+
+#homeDesc {
+    text-align: center;
+    max-width: 90%;
+}
+
+#homeDesc button {
+    border: none; 
+    background-color: #5D6B62;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 2px;
+    font-family: 'Spartan', sans-serif;
+    cursor: pointer;
+}
+
+#eventsAndWeather {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events {
+    border: 3px solid #73847A;
+    width: 90%;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 20px;
+}
+
+.events ul {
+    list-style: none;
+}
+
+#homeEvents {
+    margin: 10px auto;
+}
+
+#cityEvents {
+    max-width: 300px;
+    text-align: center;
+}
+
+#homeImgCollage, #homeFeatured, #homeForecast {
+    display: none;
+}
+
+#homeWeather {
+    padding: 10px 10px 20px 10px;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #5D6B62;
+    color: white;
+    border: 3px solid #5D6B62;
+}
+
+#cityArticle {
+    padding: 0px 20px 20px 20px;
+}
+
+#cityArticle img {
+    float: right;
+    margin: 0px 0px 15px 15px;
+    max-width: 100%;
+}
+
+#cityEvents + article {
+    display: none;
+}
+
+#joinArticle {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#joinForm {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 20px 0px;
+}
+
+#joinForm label, #joinForm p {
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Spartan', sans-serif;
+    margin: 0px;
+    font-size: 15px;
+}
+
+#joinForm legend {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    padding: 0px 3px;
+}
+
+#joinForm label input:required {
+    border: 2px solid #B10631;
+    border-radius: 2px;
+}
+
+#joinForm label input:required:valid {
+    border: 2px solid #70BD4C;
+}
+
+#joinForm input, #descp {
+    display: block;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+#joinForm > label input, #descp {
+    width: 80%;
+}
+
+#joinForm label.ignore {
+    padding: 0px 25px;
+    font-size: 12px;
+} 
+
+#joinForm label.ignore input {
+    margin-right: 10px;
+    display: inline;
+}
+
+div#radioButt {
+    margin: 0px 20px;
+    padding-top: 10px;
+}
+
+#radioButt fieldset {
+    width: 80%;
+}
+
+.submit {
+    margin: 20px;
+}
+
+.submit input {
+    font-family: 'Spartan', sans-serif;
+    font-size: 13px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 80%;
+    height: 40px;
+    background-color: #A8625E;
+    cursor: pointer;
+}
+
+div.x {
+    display: grid;
+    grid-template-columns: 230px;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+
+
+.drctCards {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+    background-color: rgba(158, 99, 96, 0.4);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.drctCards h2 {
+    font-size: 1em;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.drctCards picture {
+    width: 100%;
+}
+
+.drctCards picture img{
+    max-width: 200px;
+    max-height: 80px;
+}
+
+.busCards p, p.drctLinks {
+    margin: 0px;
+    font-size: 11px;
+    display: inline;
+    overflow-wrap: anywhere;
+}
+#drctIcons div img {
+    cursor: pointer;
+}
+
+#contactMain {
+    justify-content: center;
+}
+
+#contactArticle div:first-child p:nth-child(even) {
+    font-family: 'Spartan', sans-serif;
+}
+
+#contactArticle div:first-child {
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#contactMap {
+    max-width: 90%;
+    padding: 15px 0px;
+    margin: 0 auto;
+}
+
+#contactMap iframe {
+    width: 100%;
+}
+
+#contactForm {
+    display: grid;
+    grid-template-columns: 95%;
+    justify-items: center;
+}
+
+#contactForm label {
+    display: block;
+    padding: 5px;
+    font-family: 'Spartan', sans-serif;
+}
+
+#contactForm label input, #contactForm textarea {
+    display: block;
+    margin: 3px 0px;
+    width: 90%;
+    padding: 10px;
+}
+
+#contactForm textarea {
+    font-family: 'Bitter', serif;
+    font-size: 11px;
+    color: rgb(58, 58, 58);
+}
+
+#contactGallery {
+    justify-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#confirm p, #confirm h2 {
+    padding: 0px 20px
+}
+
+#preFoot {
+    background-color: #E6ECE1;
+    padding: 15px;
+}
+
+#preFoot div {
+    padding-top: 20px;
+}
+
+#preFoot div a {
+    padding: 5px;
+}
+
+footer {
+    background-color: #5D6B62;
+    padding: 20px;
+}
+
+footer a {
+    color: #84FFC3;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.menu li {
+    display: block;
+}

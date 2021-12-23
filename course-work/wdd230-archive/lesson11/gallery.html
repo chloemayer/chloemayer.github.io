@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Weather Gallery provides a collection of the various weather conditions year-round in the Preston, Idaho area. These photos are taken by local photographers.">
+    <title>Weather Gallery | Preston Update</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> 
+</head>
+<body>
+    <aside class="pancakeBanner">
+      Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+
+    <header>
+        <section>
+            <div id="h1">
+              <a href="index.html"><h1>The Preston Update</h1></a>
+            </div>
+            <div id="logo">
+              <img src="images/logo.png" alt="black sun logo">
+              Current weather and news 24/7.
+            </div>
+        </section>
+      </header>   
+    <nav>
+    <ul class="navUl">
+        <li id="menuLi"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="preston.html" >Preston</a></li>
+        <li><a href="soda-springs.html" >Soda Springs</a></li>
+        <li><a href="fish-haven.html" >Fish Haven</a></li>
+        <li><a href="stormcenter.html" >Storm Center</a></li>
+        <li id="active"><a href="gallery.html" >Gallery</a></li>
+      </ul>
+  </nav>
+  <main>
+      <div>
+      <h2>Weather Gallery</h2>
+        <div id="galleryDiv">
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather1.jpg" alt="Snowy mountains.">
+                <figcaption>Snowy Paris Peak mountains in December. Photo taken by John Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather2.jpg" alt="Sunny skies.">
+                <figcaption>Beautiful sunny skies over Soda Springs feild. Photo taken by Jamie Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather3.jpg" alt="Autumn leaves.">
+                <figcaption>Autumn leaves in Whitney. Photo taken by Jacob Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather4.jpg" alt="Rain on field.">
+                <figcaption>Rain-soaked field at Preston High School. Photo taken by Jordan Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather5.jpg" alt="Frost on glass.">
+                <figcaption>First Preston frost of the year. Photo taken by Joseph Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather6.jpg" alt="Mushroom-shaped cloud.">
+                <figcaption>Rare mushroom-shaped cloud in Greenville. Photo taken by Jessica Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather7.jpg" alt="Lightning and clouds">
+                <figcaption>Lightning storm in Fish Haven. Photo taken by Jane Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather8.jpg" alt="Foggy landscape.">
+                <figcaption>Foggy Logan landscape. Photo taken by Jenna Doe.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/weather9.jpg" alt="Frost on pine tree.">
+                <figcaption>Icy Cache Valley vegetation in January. Photo taken by Jeremy Doe.</figcaption>
+            </figure>
+        </div>
+
+        <div id="lastVisitDiv">
+            <p>Days since last visit: <span id="lastVisit"></span></p>
+        </div>
+    </div>
+  </main>
+
+  <section class="contactInfo">
+    <div>
+        <h3>Contact Information</h3>
+        <p>Telephone: (123) 123-4567<br>Telephone: (123) 123-4567<br>Address: 123 S Street <br>Preston, ID 12345</p><br>
+    </div>
+    <div>
+        <h3>Connect with us!</h3>
+        <a href="https://instagram.com" target="blank"><img class="media-icons" src="images/insta-icon.png" alt="Instagram icon."></a> 
+        <a href="https://twitter.com/" target="blank"><img class="media-icons" src="images/tweeter-icon.png" alt="Twitter icon."></a> 
+        <a href="https://www.pinterest.com/" target="blank"><img class="media-icons" src="images/pin-icon.png" alt="Pinterest icon."></a> 
+        <a href="https://www.facebook.com/" target="blank"><img class="media-icons" src="images/fb-icon.png" alt="Facebook icon."></a> 
+    </div>
+    <div>
+        <img src= "images/fh-foot.jpg" alt="city map">
+    </div>
+</section>
+
+<footer>
+<div>
+  <p> &copy; <span id="yearSpan"></span> | Chloe Mayer | <a href="#" target="blank">Terms of Use</a> | Current Date: <span id="currDateSpan"></span> </p>
+</div>
+</footer>
+<script src="js/gallery.js" defer></script>
+</body>
+</html>

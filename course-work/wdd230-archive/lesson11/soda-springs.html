@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Soda Springs, Idaho site-area provides the city's news, weather, and other general information.">
+    <title>Soda Springs, Idaho | The Preston Update </title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> 
+</head>
+<body>
+
+  <aside class="pancakeBanner">
+    Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+  </aside>
+
+  <header>
+    <section>
+        <div id="h1">
+          <a href="index.html"><h1>The Preston Update</h1></a>
+        </div>
+        <div id="logo">
+          <img src="images/logo.png" alt="black sun logo">
+          Current weather and news 24/7.
+        </div>
+    </section>
+  </header>  
+  <nav>
+    <ul class="navUl">
+      <li id="menuLi"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="preston.html" >Preston</a></li>
+        <li id="active"><a href="soda-springs.html" >Soda Springs</a></li>
+        <li><a href="fish-haven.html" >Fish Haven</a></li>
+        <li><a href="stormcenter.html" >Storm Center</a></li>
+        <li><a href="gallery.html" >Gallery</a></li>
+      </ul>
+    </nav>
+    
+        <div id="heroDiv">
+          <h2>Soda Springs, Idaho</h2>
+          <picture>
+
+            <img srcset="images/soda-hero400.jpg 400w,
+                        images/soda-hero800.jpg 800w,
+                        images/soda-hero1000.jpg 1000w,
+                        images/soda-hero1920.jpg 1920w"
+                  sizes="(max-width: 400px) 100vw,
+                        (max-width: 32.5em) 100vw,
+                        (min-width: 32.5em) 100vw,
+                        1920px" 
+                  src="images/soda-hero1920.jpg"
+                  alt="Soda Springs Idaho">
+          </picture>
+          <section id="summarySec">
+            <h3>Weather Summary</h3>
+            <div>
+              <p>Current: <span id="cTemp"></span>°</p>
+              <p class="hide">High: <span id="hTemp"></span>°</p>
+              <p class="hide">Humidity: <span id="humidity"></span>°</p>
+              <p class="hide">Wind Speed: <span id="wSpeed"></span> mph</p>
+              <p class="hide">Wind Chill: <span id="wcSpan"></span>°</p>
+            </div>
+        </section>
+        </div>
+        <main>
+          <section id="forecastSec">
+            <h2>5 Day Forecast</h2>
+            <div id="fDiv"></div>
+          </section>
+
+          <div id="townNews">
+            <section id="eventsSec"> 
+              <picture>
+                    <img src="images/placeholder.jpg" data-src="images/ss-event.jpg" alt="Octoberfest">
+                </picture>
+              </section>
+            
+            <section id="articleSec">
+              <h2>Local Stories</h2>
+                <h3>How we Delayed Old Faithful</h3>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/ss-article.jpg" alt="Soda Springs Geyser">
+                </picture>
+                <p>
+                  Once a popular stop for travelers on the Oregon Trail, the city of Soda Springs is no stranger to visitors. The famous pioneer trail has not been active since the 1870's, yet the town's tourist activity continues to "surge" thanks to our famous geyser—the Soda Springs geyser!<br><br>
+                Dubbed the "Oregon Trail Oasis", the area's carbonated springs have always been a curiosity and natural wonder. It wasn't until 1937, though, that the city's geyser was unintentionally discovered by a couple of business men drilling for hot water. After exposing the natural, volcanically charged stream of water over 300 feet underground, it took weeks for the city to get control of the flow. What the city didn't know at the time, however, was the far-reaching impact the geyser was already making. <br>
+                Within a few weeks of its discovery, Soda Springs received a letter from the United States Secretary of Interior, asking that they shut the geyser "off", reporting that its flow was throwing off the most famous geyser in the world, Old Faithful. Over 240 miles away, park officials were noticing a sudden change in the frequency of the geyser named for its reliable timing. As we all know, the city was eventually able to cap the geyser and manually control its flow. Today, it remains the only geyser controlled by man, and we're happy to report that Old Faithful hasn't experienced any notable delays since the super-pressured flow was tamed. 
+                </p>
+              </section>
+            </div>
+
+          <aside id="imgSec"> 
+            <div><img src="images/placeholder.jpg" data-src="images/ss-imgline1.jpg" alt="Soda Springs scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/ss-imgline2.jpg" alt="Soda Springs scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/ss-imgline3.jpg" alt="Soda Springs scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/ss-imgline4.jpg" alt="Soda Springs scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/ss-imgline5.jpg" alt="Soda Springs scenery"></div>
+          </aside>
+      </main>
+
+        <section class="contactInfo">
+          <div>
+              <h3>Contact Information</h3>
+              <p>Telephone: (123) 123-4567<br>Telephone: (123) 123-4567<br>Address: 123 S Street <br>Preston, ID 12345</p><br>
+          </div>
+          <div>
+            <h3>Connect with us!</h3>
+            <a href="https://instagram.com" target="blank"><img class="media-icons" src="images/insta-icon.png" alt="Instagram icon."></a> 
+            <a href="https://twitter.com/" target="blank"><img class="media-icons" src="images/tweeter-icon.png" alt="Twitter icon."></a> 
+            <a href="https://www.pinterest.com/" target="blank"><img class="media-icons" src="images/pin-icon.png" alt="Pinterest icon."></a> 
+            <a href="https://www.facebook.com/" target="blank"><img class="media-icons" src="images/fb-icon.png" alt="Facebook icon."></a> 
+        </div>
+          <div>
+            <img src="images/placeholder.jpg" data-src="images/ss-foot.jpg" alt="city map">
+          </div>
+      </section>
+    
+  <footer>
+    <div>
+      <p> &copy; <span id="yearSpan"></span> | Chloe Mayer | <a href="#" target="blank">Terms of Use</a> | Current Date: <span id="currDateSpan"></span> </p><p><a href="https://openweathermap.org/" target="_blank">Openweathermap.org</a></p>
+    </div>
+  </footer>
+  <script src="js/soda-springs.js" defer></script>
+</body>
+</html>

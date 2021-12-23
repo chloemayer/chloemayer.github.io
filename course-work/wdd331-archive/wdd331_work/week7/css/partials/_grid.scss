@@ -1,0 +1,56 @@
+//variables
+$num-columns: 8;
+$one-column: 100% / $num-columns;
+$loop-start: 1;
+$loop-end: $num-columns + 1;
+
+//mixins
+@mixin columns($column-span) {
+    flex: 0 0 $one-column * $column-span;
+}
+
+@mixin offsets($offset-span) {
+    margin-left: $one-column * $offset-span;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+}
+
+//set icon size
+.icon {
+    width: $icon-size;
+    height: $icon-size;
+}
+
+.number {
+    text-align: center;
+    font-size: $font-size-number;
+  //an icon that is part of a number should be half the normal size
+    & > .icon {
+        width: $icon-size * .5;
+        height: $icon-size *.5;
+    }
+}
+
+.cell {
+    flex: 1;
+    text-align: center;
+}
+
+//loops
+@for $index from $loop-start to $loop-end {
+    .col-#{$index} {
+        @include columns($index);
+    }
+}
+
+@for $index from $loop-start to $loop-end {
+    .offset-#{$index} {
+        @include offsets($index);
+    }
+}

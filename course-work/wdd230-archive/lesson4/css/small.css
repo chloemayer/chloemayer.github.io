@@ -1,0 +1,116 @@
+body {
+    margin: 0 auto;
+  }
+  
+header {
+  display: flex;
+  align-items: flex-end;
+  background-color: #CFDBD5;
+}
+
+  .bannerText {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bannerImg img {
+    width: 40px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 10px 5px 5px 8px;
+    color: #34344A;
+    font-family: 'Stint Ultra Expanded', sans-serif;
+  }
+  
+  .motto {
+    font-size: 12px;
+    padding: 0px 8px 10px 8px;
+    color: #34344A;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .navUl {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  .navUl a {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #34344A;
+    font-family: 'Karma', serif;
+  }
+
+  .navUl li {
+    display: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid #333533;
+  }
+
+  .navUl li:first-child {
+    display: block;
+  }
+
+  .navUl li.active {
+    background-color: #CFDBD5;
+  }
+
+  .navUl li:hover {
+    background-color: #F4F6F5;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #34344A;
+    font-family: 'Karma', serif;
+    margin: 40px 5px 30px 5px;
+  }
+  
+  div.contentSub {
+    font-size: 15px;
+    border: 2px solid black;
+    margin: 5px 15px;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .subcontent .last {
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    height: 60px;
+    background-color: #CFDBD5;
+    color: #34344A;
+    font-family: 'Karma', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+  }
+  
+  p.topFooter,
+  p.bottomFooter {
+    margin: 0px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  footer a {
+    color: #E35C3B;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .responsive li {
+    display: block;
+  }

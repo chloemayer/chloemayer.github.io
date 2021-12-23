@@ -1,0 +1,249 @@
+@media only screen and (min-width: 38em) {
+
+    .navU {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navU li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navU li:first-child {
+        display: none;
+    }
+
+main {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 15px;
+ }
+
+header div#logos img:first-child {
+    display: flex;
+    justify-items: center;   
+}
+
+header div#logos img:nth-child(2) {
+    display: none;
+}
+
+#eventsAndWeather {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#homeImgCollage {
+    display: grid;
+    grid-gap: 5px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(4, 150px);
+    
+}
+
+#homeImgCollage img:first-child {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+#homeImgCollage img:nth-child(2) {
+    grid-column: 2 / 3;
+}
+
+#homeImgCollage img:nth-child(3) {
+    grid-column: 2 / 3;
+}
+
+#homeImgCollage img:nth-child(4) {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+#homeImgCollage img:nth-child(7) {
+    display: none;
+}
+
+#homeImgCollage img:nth-child(8) {
+    display: none;
+}
+
+#homeFeatured {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 1fr;
+   
+    margin: 15px 0px;
+}
+
+#homeFeatured h3 {
+    grid-column: 1 / 4;
+}
+
+#homeFeatured h2 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-family: 'Spartan', sans-serif;
+}
+
+#homeFeatured div {
+    grid-row: 2;
+    text-align: center;
+}
+
+#homeForecast {
+    display: block;
+    width: 100%;
+}
+
+#fdiv {
+    color: black;
+    display: flex;
+}
+
+#fdiv div {
+    margin: 15px auto;
+    font-family: 'Spartan', sans-serif;
+    background-color: #687f53;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#fdiv div h4 {
+    margin: 5px 0px;
+}
+
+#cityArticle img {
+    float: right;
+    margin: 10px 0px 10px 20px;
+}
+
+#cityEvents + article {
+    display: inline;
+    padding: 0px 20px 20px 20px;
+}
+
+#cityEvents {
+    max-width: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cityEvents ul, 
+#cityEvents + article ul  {
+    list-style: none;
+    padding: 0px 20px 20px 30px;
+}
+
+#cityEvents + article img {
+    float: left;
+    margin: 0px 25px 15px 0px;
+}
+
+#joinArticle picture img {
+    float: right;
+    margin: 0px 20px;
+}
+
+#joinForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.submit input {
+    font-size: 15px;
+
+    margin-left: 25px;
+}
+
+div.x {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 230px));
+}
+
+div.x.list {
+    grid-template-columns: 230px;
+}
+
+#drctIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#contactArticle div:first-child p {
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+#contactMap {
+    padding: 25px 0px;
+}
+
+#contactForm {
+    grid-template-columns: 50% 50%;
+    justify-items: stretch;
+}
+
+div#f1 {
+    grid-column: 1;
+    margin: 20px 0px;
+}
+
+div#f2 {
+    grid-column: 2;
+    margin: 20px;
+}
+
+#contactForm + div input {
+    max-width: 35%;
+} 
+
+#contactGallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+#contactGallery figure {
+    max-width: 200px;
+    width: 90%;
+}
+
+#contactGallery figure img {
+    width: 100%;
+}
+
+
+#contactGallery h2 {
+    grid-column: 1 / 4;
+}
+
+#preFoot {
+    padding-left: 30px;
+}
+
+}

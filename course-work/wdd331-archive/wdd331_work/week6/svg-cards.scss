@@ -1,0 +1,66 @@
+$card-width: 410px;
+$card-height: 570px;
+$c-main: darkred;
+$c1-sec: #FAF9F6;
+$c2-sec: #5F758E;
+
+body {
+  display: flex;
+}
+
+.card {
+  border: 1px solid black;
+  height: $card-height;
+  width: $card-width;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 2px 2px 4px grey;
+}
+
+.r1 {
+  fill: $c1-sec; 
+  stroke: $c1-sec;
+}
+
+.r2 {
+  fill: $c-main;
+  stroke: $c-main;
+}
+
+.outerC {
+  fill: none;
+  stroke: $c-main;
+  stroke-width: 1.5px; 
+}
+
+.innerC {
+    fill: none;
+  stroke: $c-main;
+  stroke-width: 1px;
+}
+
+.poly1 {
+  fill: $c-main;
+}
+
+.poly2 {
+  fill: $c2-sec;
+  stroke: $c2-sec;
+}
+
+.poly3 {
+  stroke: $c-main;
+  fill: none;
+}
+
+.c2-circles {
+  stroke: $c2-sec;
+  stroke-width: 1.5px;
+  fill: none;
+}
+
+.r3 {
+  stroke: $c2-sec;
+  stroke-width: 5px;
+}

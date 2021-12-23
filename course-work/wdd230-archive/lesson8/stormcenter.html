@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fill out the form on our Storm Center page to report a storm near you.">
+    <title>Storm Center Report | Preston Update</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Karma&family=Montserrat&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> 
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/bl-logo.png" alt="black sun logo">
+    </div>
+    <section class="web-name">
+        <h1>The Preston Update</h1>
+        <div class="motto">Current weather and news 24/7.</div>
+    </section>
+  </header>  
+  <nav>
+      <ul class="navUl">
+        <li class="menuLi"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+  </nav>
+
+  <main>
+    <h2>Storm Center</h2>
+    <p>Report a storm near you, below!</p>
+
+    <form method="get" action="thanks.html">
+        <fieldset id="fs1">
+          <legend>Contact Information:</legend>
+              <label class="sec1">Full Name* <input type="text" name="fname" pattern="[a-zA-Z0-9\s]+" minlength="5" required></label>
+              <label class="sec1">Email <input type="email" name="email" placeholder="email_address@gmail.com"></label>
+              <label class="sec1">Phone Number* <input type="tel" name="tel" required></label>
+              <label class="sec1">Zip Code* <input type="number" name="zip" required></label>
+        </fieldset>
+
+        <fieldset id="fs2">
+          <legend>Storm Information</legend>
+            <label class="sec2">Storm Date <input type="date" name="sDate"></label>
+            <label class="sec2">Storm Type <input list="type" name="sType"> </label>
+                    <datalist id="type">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+
+            <label class="sec2" for="severity">Storm Severity</label>
+            <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" oninput="rangeCHange(this.value)" onchange="rangeChange(this.value)">
+            <div id="rangeSpan"> 5</div>
+            <datalist>
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="10"></option>
+            </datalist>
+
+            <label class="sec2" for="region">Storm Region </label>
+              <select name="userDanger" id="region">
+                  <option value="" disabled selected>Select Region...</option>
+                  <option value="preston">Preston</option>
+                  <option value="sodasprings">Soda Springs</option>
+                  <option value="fishhaven">Fish Haven</option>
+              </select>
+               
+        </fieldset>
+
+
+        <fieldset id="fs3">
+          <legend>Further Information</legend>
+
+            <span class="sec3">Are you in danger?</span>
+              <div>
+                <input type="radio" id="yes" name="danger"> 
+                <label for="yes"> Yes</label>
+              </div>
+              <div>
+                <input type="radio" id="maybe" name="danger"> 
+                <label for="maybe"> Maybe</label>
+              </div>
+              <div>
+                <input type="radio" id="no" name="danger"> 
+                <label for="no"> No</label>
+              </div>
+            
+
+              <label for="textarea" class="sec3">Additional Info</label>
+                <textarea id="textarea" name="textarea" rows="7" placeholder="Enter text here..."></textarea>
+
+        </fieldset>
+
+          <div>
+            <input type="submit" name="submit" value="Send My Form" class="subButton">
+          </div>
+
+    </form>
+
+  </main>
+  <section class="contactInfo">
+        
+    <div class="push">
+        <h3>Contact Information</h3>
+        <p>Telephone: (123) 123-4567<br>Telephone: (123) 123-4567<br>Address: 123 S Street <br>Preston, ID 12345</p><br>
+    </div>
+    <div>
+        <h3>Connect with us!</h3>
+        <a href="images/insta-icon.png" target="blank"><img class="media-icons" src="images/insta-icon.png" alt="Instagram icon."></a> 
+        <a href="images/tweeter-icon.png" target="blank"><img class="media-icons" src="images/tweeter-icon.png" alt="Twitter icon."></a> 
+        <a href="images/pin-icon.png" target="blank"><img class="media-icons" src="images/pin-icon.png" alt="Pinterest icon."></a> 
+        <a href="images/fb-icon.png" target="blank"><img class="media-icons" src="images/fb-icon.png" alt="Facebook icon."></a> 
+    </div>
+    <div class="imgLine">
+        <img src="images/home-img7.jpg" alt="mountains">
+        <img src="images/home-img8.jpg" alt="fire embers">
+        <img src="images/footer-img.jpg" alt="river">
+    </div>
+</section>
+
+<footer>
+<div>
+  <p> &copy; <span class="yearSpan"></span> | Chloe Mayer | <a href="#" target="blank">Terms of Use</a> | Current Date: <span class="currDateSpan"></span> </p>
+</div>
+</footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>

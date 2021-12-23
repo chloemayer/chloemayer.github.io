@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+//colors
+$sand-color: #FAEBD7;
+
+$sidebar-theme: #6495ED;
+$main-theme: $sand-color;
+$active: #DEB887;
+
+//mixins
+@mixin active-links {
+    color: $active;
+}
+
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    @media (min-width: 37em) {
+        > div {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+    }
+}
+
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+
+header {
+    background-color: $sidebar-theme;
+    text-align: right;
+    padding: 25px;
+    h1 {
+        border-bottom: 1px $main-theme solid;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+        a {
+        color: $main-theme;
+        text-decoration: none;
+        }
+}
+
+nav {
+    padding: 10px 0px 10px 0px;
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li {
+            padding-top: 10px;
+        }
+            a {
+                &:visited {
+                    color: $main-theme;
+                }
+                &:hover {
+                    color: white;
+                    text-decoration: underline;
+                }
+                &:active {
+                    @include active-links;
+                }
+            }
+    }
+}
+
+
+main {
+    background-color: $main-theme;
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 5px darkgrey;
+}
+
+h2 {
+    padding-top: 10px;
+    margin: 0px 0px 25px 0px;
+    @media (min-width: 37em) {
+        & {
+            font-size: 2em;
+        }
+    }
+    a {
+    color: black;
+    text-decoration: none; 
+        &:visited {
+            color: black;
+        }
+        &:hover {
+            color: $sidebar-theme;
+            text-decoration: underline;
+        }
+        &:active {
+            @include active-links;
+        }
+    }
+}
+
+p {
+    margin: 0px;
+    font-size: 13px;
+    @media (min-width: 37em) {
+        & {
+        font-size: 15px;
+        }
+    }
+    a {
+    color: $sidebar-theme;
+    text-decoration: none;
+        &:visited {
+            color: $sidebar-theme;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+        &:active {
+            @include active-links;
+        }
+    }
+}
+
+.post-date {
+    margin: 0px;
+    font-size: 13px;
+    color: gray;
+    @media (min-width: 37em) {
+        & {
+        font-size: 15px;
+        }
+    }
+}
+
+figure {
+    max-width: 200px;
+    padding: 25px 15px 15px 15px;
+    margin: 0px auto;
+    img {
+        width: 100%;
+    }
+}

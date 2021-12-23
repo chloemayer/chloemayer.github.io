@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Preston, Idaho site-area provides the city's news, weather, and other general information.">
+    <title>Preston, Idaho | The Preston Update | WDD230 Weather Site | Chloe Mayer</title>
+    <link rel="shortcut icon" href="images/root-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Karma&family=Montserrat&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+  <aside class="pancakeBanner">
+    Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+</aside>
+    <header>
+      <div class="bannerImg">
+        <img src="images/wht-logo.png" alt="white sun logo">
+      </div>
+      <section class="bannerText">
+          <h1>The Preston Update</h1>
+          <div class="motto">Current weather and news 24/7.</div>
+      </section>
+    </header>  
+    <nav>
+        <ul class="navUl">
+          <li class="menuLi"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h2>Preston, Idaho</h2>
+      <div class="heroDiv">
+          <img src="images/hero-img.jpg" class="heroImg" alt="Sunset reflecting off of lake">
+          <section class="summarySec">
+              <h3>Weather Summary</h3>
+              <img src="images/w-icon1.png" class="summaryImg" alt="Sunrise icon.">
+              <div class="summaryText">
+                <p>Current: </p>
+                <p>High: </p>
+                <p>Humidity: </p>
+                <p>Wind Speed: </p>
+                <p>Wind Chill: </p>
+            </div>
+          </section>
+      </div>
+        <section class="forecastSec">
+          <h3>5 Day Forecast</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="forecastIconTd">
+                <td><img src="images/w-icon6.png" class="w-icons" alt="Snowing and partly sunny icon."></td>
+                <td><img src="images/w-icon2.png" class="w-icons" alt="Partly cloudy icon."></td>
+                <td><img src="images/w-icon7.png" class="w-icons" alt="Sunny icon."></td>
+                <td><img src="images/w-icon4.png" class="w-icons" alt="Raining and partly sunny icon."></td>
+                <td><img src="images/w-icon5.png" class="w-icons" alt="Snowing icon"></td>
+              </tr>
+              <tr class="forecastTempTd">
+                <td>64˚ 36˚</td>
+                <td>67˚ 40˚</td>
+                <td>58˚ 39˚</td>
+                <td>62˚ 38˚</td>
+                <td>70˚ 44˚</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="articleSec">
+          <h2>Article Header</h2>
+          <img src="images/art-img.jpg" alt="article image">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+    </main>
+    <footer>
+      <div class="contactInfo">
+        <img src="images/footer-img.jpg" class="contactInfoImg" alt="Street with buildings">
+        <h4>Contact Information</h4>
+        <p>Telephone: (123) 123-4567</p><br>
+        <p>Telephone: (123) 123-4567</p><br>
+        <p>Address: 123 S Street <br>Preston, ID 12345</p><br>
+        <a href="images/insta-icon.png" target="blank"><img class="media-icons" src="images/insta-icon.png" alt="Instagram icon."></a> 
+        <a href="images/tweeter-icon.png" target="blank"><img class="media-icons" src="images/tweeter-icon.png" alt="Twitter icon."></a> 
+        <a href="images/pin-icon.png" target="blank"><img class="media-icons" src="images/pin-icon.png" alt="Pinterest icon."></a> 
+        <a href="images/fb-icon.png" target="blank"><img class="media-icons" src="images/fb-icon.png" alt="Facebook icon."></a> 
+      </div>
+      <div class="footerMain">
+        <p class="topFooter"> &copy; <span class="yearSpan"></span> | Chloe Mayer | <a href="#" target="blank">Terms of Use</a></p>
+        <p class="bottomFooter"> Current Date: <span class="currDateSpan"></span> </p>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

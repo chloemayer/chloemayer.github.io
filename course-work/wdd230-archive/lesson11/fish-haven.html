@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Fish Haven, Idaho site-area provides the city's news, weather, and other general information.">
+    <title>Fish Haven, Idaho | The Preston Update </title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> 
+</head>
+<body>
+
+  <aside class="pancakeBanner">
+    Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+  </aside>
+
+  <header>
+    <section>
+        <div id="h1">
+          <a href="index.html"><h1>The Preston Update</h1></a>
+        </div>
+        <div id="logo">
+          <img src="images/logo.png" alt="black sun logo">
+          Current weather and news 24/7.
+        </div>
+    </section>
+  </header>  
+  <nav>
+    <ul class="navUl">
+      <li id="menuLi"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="preston.html" >Preston</a></li>
+        <li><a href="soda-springs.html" >Soda Springs</a></li>
+        <li id="active"><a href="fish-haven.html" >Fish Haven</a></li>
+        <li><a href="stormcenter.html" >Storm Center</a></li>
+        <li><a href="gallery.html" >Gallery</a></li>
+      </ul>
+    </nav>
+    
+        
+        <div id="heroDiv">
+          <h2>Fish Haven, Idaho</h2>
+          <picture>
+            <img srcset="images/fish-hero400.jpg 400w,
+                images/fish-hero800.jpg 800w,
+                images/fish-hero1000.jpg 1000w,
+                images/fish-hero1920.jpg 1920w"
+          sizes="(max-width: 400px) 100vw,
+                (max-width: 32.5em) 100vw,
+                (min-width: 32.5em) 100vw,
+                1920px" 
+          src="images/fish-hero1920.jpg"
+          alt="Fish Haven Idaho">
+          </picture>
+            <section id="summarySec">
+                <h3>Weather Summary</h3>
+                <div>
+                  <p>Current: <span id="cTemp"></span>°</p>
+                  <p class="hide">High: <span id="hTemp"></span>°</p>
+                  <p class="hide">Humidity: <span id="humidity"></span>°</p>
+                  <p class="hide">Wind Speed: <span id="wSpeed"></span> mph</p>
+                  <p class="hide">Wind Chill: <span id="wcSpan"></span>°</p>
+                </div>
+            </section>
+        </div>
+      <main>
+          <section id="forecastSec">
+            <h2>5 Day Forecast</h2>
+            <div id="fDiv"></div>
+          </section>
+
+          <div id="townNews">
+            
+            <section id="eventsSec"> 
+              <picture>
+                <img src="images/placeholder.jpg" data-src="images/fh-event.jpg" alt="Bonneville cisco fish">
+              </picture>
+            </section>
+
+            <section id="articleSec">
+              <h2>Local Stories</h2>
+                <h3>Activities in the Area!</h3>
+                <picture>
+                  <img src="images/placeholder.jpg" data-src="images/fh-article.jpg" alt="Bear Lake North Beach">
+                </picture>
+                <p>
+                  The city of Fish Haven is loved by many for its simple, quiet demeanor, however, that does not mean that there aren't countless fun activities and sites all around! Whether it be camping, fishing, sightseeing, hiking, or golfing, there is something for everyone. <br><br>
+                  The most popular attraction is definitely Bear Lake State Park. Fish Haven borders the lake, making the journey an easy walking distance from almost anywhere in town. Enjoy fishing for our unique Bonneville cisco fish during the summer or ice fishing in the winter time. Campgrounds line the area, and an arena is accessible to all of those who want to go boating. 
+                  Make the quick drive up to North Beach for water sports and activities of all kind. The area is great for birdwatching due to our Bear River Bird Refuge, and the golfing never stops at the Bear Lake golf course. There are also various trails, caves, and hot springs in the area, some of the most popular locations for on land fun include the Minnetonka Cave, the Paris Ice Caves, the crimson trail, and the Maple Grove Hot Springs.<br><br>
+                  The fun does not stop for winter. Snow activities such as snowmobiling and ice fishing are common during the beautiful powdery winters. There are also numerous attractions for the history buffs, such as the National Oregon/California Trail Center, the historic Paris Tabernacle, and The Bank of Montpelier - famous for being robbed by Butch Cassidy and his Wild Bunch Gang.<br><br>
+                  So, if you are interested in visiting Fish Haven, don't wait! There are fun activities for everyone in your family, and the best part—you won't have to wait in any long lines. 
+                </p>
+            </section>
+
+          </div>
+
+          <aside id="imgSec"> 
+            <div><img src="images/placeholder.jpg" data-src="images/p-imgline1.jpg" alt="Fish Haven scenery"></div>
+              <div><img src="images/placeholder.jpg" data-src="images/p-imgline2.jpg" alt="Fish Haven scenery"></div>
+              <div><img src="images/placeholder.jpg" data-src="images/p-imgline3.jpg" alt="Fish Haven scenery"></div>
+              <div><img src="images/placeholder.jpg" data-src="images/p-imgline4.jpg" alt="Fish Haven scenery"></div>
+              <div><img src="images/placeholder.jpg" data-src="images/p-imgline5.jpg" alt="Fish Haven scenery"></div>
+          </aside>
+      </main>
+
+      <section class="contactInfo">  
+        <div>
+            <h3>Contact Information</h3>
+            <p>Telephone: (123) 123-4567<br>Telephone: (123) 123-4567<br>Address: 123 S Street <br>Preston, ID 12345</p><br>
+        </div>
+        <div>
+          <h3>Connect with us!</h3>
+          <a href="https://instagram.com" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/insta-icon.png" alt="Instagram icon."></a> 
+          <a href="https://twitter.com/" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/tweeter-icon.png" alt="Twitter icon."></a> 
+          <a href="https://www.pinterest.com/" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/pin-icon.png" alt="Pinterest icon."></a> 
+          <a href="https://www.facebook.com/" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/fb-icon.png" alt="Facebook icon."></a> 
+      </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/fh-foot.jpg" alt="city map">
+        </div>
+    </section>
+    
+  <footer>
+    <div>
+      <p> &copy; <span id="yearSpan"></span> | Chloe Mayer | <a href="#" target="blank">Terms of Use</a> | Current Date: <span id="currDateSpan"></span> </p><p><a href="https://openweathermap.org/" target="_blank">Openweathermap.org</a></p>
+    </div>
+  </footer>
+  <script src="js/fish-haven.js" defer></script>
+</body>
+</html>

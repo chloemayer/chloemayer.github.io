@@ -1,0 +1,142 @@
+@media only screen and (min-width: 32.5em) {
+  .pancakeBanner {
+    font-size: 1.5rem;
+  }
+  
+  .logo img {
+      width: 60px;
+  }
+  
+  header {
+      height: 120px;
+      min-width: 680px;
+  }
+  
+  h1 {
+      font-size: 1.5rem;
+      padding: 10px 10px 7px 10px;
+  }
+  
+  .motto {
+      font-size: 13px;
+  }
+  
+  .navUl {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 60px;
+      border-bottom: 2px solid #333533;
+      min-width: 680px;
+  }
+  
+  .navUl li {
+      display: block;
+      padding: 0px;
+      flex: 1 1 100%;
+      border-bottom: none;
+  }
+  
+  .navUl li:first-child {
+      display: none;
+  }
+  
+  .navUl a {
+      padding: 15px 0px;
+  }
+
+h2 {
+  font-size: 3rem;
+  margin: 20px 0px;
+}
+
+section#townsSec article {
+  grid-template-columns: 1fr 1fr;
+  padding: 25px 0px;
+  align-items: center;
+}
+
+article:nth-child(odd) img {
+  grid-column: 2;
+}
+
+article:nth-child(odd) .townsData {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: right;
+  text-align: right;
+}
+
+article:nth-child(even) .townsData {
+  padding-left: 20px;
+}
+
+section#townsSec article.tArt div.imgDiv img {
+  padding-bottom: 0px;
+}
+
+article.tArt div.townsData {
+  border-left: none;
+}
+
+.townsArt img {
+  padding: 20px;
+}
+
+section#reportSec {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  align-items: center;
+  margin: 45px auto;
+  max-width: 1120px;
+}
+
+section#reportSec div {
+  display: grid;
+  grid-template-columns: 170px 170px;
+  grid-template-rows: 1fr 1fr;
+  width: 340px;
+  margin-right: 25px;
+}
+
+section#reportSec img {
+  display: inline;
+}
+
+section#reportSec img:last-child {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+section#reportSec article {
+  max-height: 744px;
+  padding-left: 20px;
+}
+
+article.tArt div.townsData {
+  margin-left: 0px;
+}
+
+.contactInfo {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo > div:last-child img {
+  display: inline;
+  float: right;
+  margin-right: 5px;
+}
+
+.contactInfo div:nth-child(2) .media-icons {
+  width: 30px;
+  padding-right: 5px;
+}
+
+footer div p {
+    font-size: 15px;
+  }
+}

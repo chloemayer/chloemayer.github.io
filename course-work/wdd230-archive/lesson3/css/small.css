@@ -1,0 +1,134 @@
+html {
+    margin: auto;
+    min-width: 375px;
+}
+
+header {
+    display: flex;
+    align-items: flex-end; 
+} 
+
+header img {
+    padding: 15px;
+    width: 30px;
+}
+
+h1 {
+    margin: 0px 0px 0px 5px;
+    color: #34344A;
+    font-family: 'Stint Ultra Expanded', sans-serif;
+    padding: 20px 0px;
+    font-size: 1.5em;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.navDiv {
+    background-color: #CFDBD5;
+}
+
+ul.navUl {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    font-size: 17px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-bottom: 1px solid #333533;
+}
+
+.navUl a {
+    font-family: 'Karma', serif;
+    color: #34344A;
+    text-decoration: none;
+    padding: 9px 100px;
+}
+
+.navUl li {
+    padding: 10px;
+
+}
+
+.navUl li:hover, .navUl a:hover {
+    background-color: #F4F6F5;
+    color: #333533; 
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 50px 0px 30px 0px;
+    color: #34344A;
+}
+
+h2, h3, h4 {
+    font-family: 'Karma', serif;
+}
+
+h3 { 
+    color: #333533;
+    padding: 4px 0px 4px 20px;
+    border-left: solid;
+    border-left-width: 6px;
+    border-left-color:#34344A;;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.homepgLogo img {
+    width: 90px;
+    float: left;
+    padding-right: 20px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+main p {
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.palettep img{
+    max-width: 300px;
+    padding: 10px;
+}
+
+main li {
+    font-size: 10px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.p1, .p2, .caList, .fsList, .taList {
+    list-style: none;
+}
+
+footer {
+    background-color: #CFDBD5;
+    color: #34344A;
+    font-family: 'Karma', serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 60px;
+}
+
+.footP > a {
+    color: #E35C3B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #333533;
+}

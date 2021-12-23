@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Preston, Idaho site-area provides the city's news, weather, and other general information.">
+    <title>Preston, Idaho | The Preston Update </title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> 
+</head>
+<body>
+  <aside class="pancakeBanner">
+    Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+  </aside>
+  <header>
+    <section>
+        <div id="h1">
+          <a href="index.html"><h1>The Preston Update</h1></a>
+        </div>
+        <div id="logo">
+          <img src="images/logo.png" alt="black sun logo">
+          Current weather and news 24/7.
+        </div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navUl">
+      <li id="menuLi"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html" >Home</a></li>
+        <li id="active"><a href="preston.html" >Preston</a></li>
+        <li><a href="soda-springs.html" >Soda Springs</a></li>
+        <li><a href="fish-haven.html" >Fish Haven</a></li>
+        <li><a href="stormcenter.html" >Storm Center</a></li>
+        <li><a href="gallery.html" >Gallery</a></li>
+      </ul>
+    </nav>
+    
+        
+        <div id="heroDiv">
+          <h2>Preston, Idaho</h2>
+          <picture>
+            <img srcset="images/preston-400.jpg 400w,
+            images/preston-800.jpg 800w,
+            images/preston-1000.jpg 1000w,
+            images/preston-1920.jpg 1920w"
+      sizes="(max-width: 400px) 100vw,
+            (max-width: 32.5em) 100vw,
+            (min-width: 32.5em) 100vw,
+            1920px" 
+      src="images/preston-1920.jpg"
+      alt="Preston Idaho">
+          </picture>
+            <section id="summarySec">
+                <h3>Weather Summary</h3>
+                <div>
+                  <p>Current: <span id="cTemp"></span>°</p>
+                  <p class="hide">High: <span id="hTemp"></span>°</p>
+                  <p class="hide">Humidity: <span id="humidity"></span>°</p>
+                  <p class="hide">Wind Speed: <span id="wSpeed"></span> mph</p>
+                  <p class="hide">Wind Chill: <span id="wcSpan"></span>°</p>
+                </div>
+            </section>
+        </div>
+
+        <main>
+          <section id="forecastSec">
+            <h2>5 Day Forecast</h2>
+            <div id="fDiv"></div>
+          </section>
+
+
+          <div id="townNews">
+
+            <section id="eventsSec"> 
+              <picture>
+                <img src="images/placeholder.jpg" data-src="images/p-event.jpg" alt="American flag">
+              </picture>
+            </section>
+            
+            <section id="articleSec">
+              <h2>Local Stories</h2>
+                <h3>Remebering the Bear River Massacre</h3>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/preston-article.jpg" alt="preston fence">
+                </picture>
+                <p>Although many of us have seen the large stony monument that has long resided by route 91, a recent survey shows that few locals know the history behind this site. The recent purchase of nearby land by the Shoshone tribe has peaked some local interest, so we are here to spread the story! <br><br>
+                  In the years leading up to the attach, the Shoshone tribes' people were forced to leave their lands and relocate to this site. The surrounding settlers asked the U.S. military for assistance following multiple raids from the Native Americans.
+                  On the morning of January 29, 1863, the small village was attacked by U.S. military. They were initially successful in fending off the American troops' first attack; however, the village was soon overcome. Hundreds of Shoshone men, women, and children were murdered and 23 U.S. soldiers. Today, the Bear River Massacre is known as the largest Indian massacre west of the Mississippi river. Since the fight took place during the Civil War, however, it received very little attention at the time.<br><br> 
+                  In the years following the massacre, the Church of Jesus Christ of Latter-Day Saints assisted the few Shoshone survivors, including Chief Sagwitch, to relocate and settle on nearby land. Although we don't have many details, the city has been told that the tribes' people's recent purchase of this land is meant to house an educational cultural center.
+                </p>
+              </section> 
+
+            </div>
+
+          <aside id="imgSec"> 
+            <div><img src="images/placeholder.jpg" data-src="images/p-imgline1.jpg" alt="Preston scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/p-imgline2.jpg" alt="Preston scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/p-imgline3.jpg" alt="Preston scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/p-imgline4.jpg" alt="Preston scenery"></div>
+            <div><img src="images/placeholder.jpg" data-src="images/p-imgline5.jpg" alt="Preston scenery"></div>
+          </aside>
+      </main>
+
+      <section class="contactInfo">
+        <div>
+            <h3>Contact Information</h3>
+            <p>Telephone: (123) 123-4567<br>Telephone: (123) 123-4567<br>Address: 123 S Street <br>Preston, ID 12345</p><br>
+        </div>
+        <div>
+            <h3>Connect with us!</h3>
+            <a href="https://instagram.com" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/insta-icon.png" alt="Instagram icon."></a> 
+            <a href="https://twitter.com/" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/tweeter-icon.png" alt="Twitter icon."></a> 
+            <a href="https://www.pinterest.com/" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/pin-icon.png" alt="Pinterest icon."></a> 
+            <a href="https://www.facebook.com/" target="blank"><img class="media-icons" src="images/placeholder.jpg" data-src="images/fb-icon.png" alt="Facebook icon."></a> 
+        </div>
+        <div>
+            <img src="images/placeholder.jpg" data-src="images/p-foot.jpg" alt="city map">
+        </div>
+      </section>
+    
+  <footer>
+    <div>
+      <p> &copy; <span id="yearSpan"></span> | Chloe Mayer | <a href="#" target="blank">Terms of Use</a> | Current Date: <span id="currDateSpan"></span> </p><p><a href="https://openweathermap.org/" target="_blank">Openweathermap.org</a></p>
+    </div>
+  </footer>
+  <script src="js/preston.js" defer></script>
+</body>
+</html>

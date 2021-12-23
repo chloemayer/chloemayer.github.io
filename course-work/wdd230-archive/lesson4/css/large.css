@@ -1,0 +1,33 @@
+@media only screen and (min-width: 60em) {
+    main, footer {
+        max-width: 1200px;
+    }
+
+    .bannerImg img {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .motto {
+        font-size: 17px;
+    }
+
+    h2 {
+        margin: 0px 30px 40px 30px;
+      }
+
+
+    footer {
+        height: 80px;
+        margin: 80px auto;
+      }
+
+      p.topFooter,
+      p.bottomFooter {
+        font-size: 17px;
+      }
+
+}

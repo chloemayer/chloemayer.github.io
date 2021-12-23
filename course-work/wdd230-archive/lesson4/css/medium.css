@@ -1,0 +1,71 @@
+@media only screen and (min-width: 32.5em) {
+  
+.bannerImg img {
+    width: 60px;
+    padding: 10px 10px 20px 20px;
+}
+    
+h1 {
+    font-size: 2rem;
+    padding: 10px 10px 7px 10px;
+}
+
+.motto {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    border-bottom: 2px solid #333533;
+    min-width: 760px;
+}
+
+.navUl li {
+    display: block;
+    padding: 0px;
+    flex: 1 1 100%;
+    border-bottom: none;
+}
+
+.navUl li:first-child {
+    display: none;
+}
+
+.navUl a {
+    font-size: 17px;
+    padding: 20px 0px;
+}
+
+main {
+    margin: auto;
+    max-width: 740px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin: 0px 30px 30px 30px;
+  }
+  
+  div.contentSub {
+    font-size: 20px;
+    margin: 15px 30px;
+    padding: 10px 0px;
+  }
+
+  footer {
+    height: 80px;
+    max-width: 740px;
+  }
+
+  p.topFooter,
+  p.bottomFooter {
+    font-size: 15px;
+  }
+
+}

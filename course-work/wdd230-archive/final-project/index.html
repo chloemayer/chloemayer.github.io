@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Salt Lake City Chamber of Commerce website serves updates and news to its members and the community.">
+    <title>Welcome | SLC Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <aside id="wwBanner">
+        <p>Weather Warning: <span></span></p>
+    </aside>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/slc-logo.png" alt="logo"></a> 
+        </div>
+        <nav>
+            <ul class="navU">
+                <li><a href="#" onclick="navButton()">&#9776; Menu</a></li>
+                <li id="currentpg"><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="centerMain">
+
+        <section id="homeHero">
+            <picture>
+                <img src="images/home-img.jpg" alt="Capital building">
+            </picture>
+            <h1>Welcome</h1>
+            <p><em>to the Salt Lake Chamber of Commerce...</em></p>
+        </section>
+
+        <article id="homeDesc">
+            <h2>Who are we?</h2>
+            <div>
+                <p> With roots going as far back as 1887, the Salt Lake City Chamber of Commerce knows
+                    the area, the businesses, and, most importantly, the people who make up our city. We 
+                    believe in protecting and fostering business relationships, as well as our shared
+                    interests. We have a constant goal of increasing prosperity, employment, and community 
+                    support for the jobs in this city. By joining us, you are serving your city, your employees,
+                    and your customers. The chamber consists of businesses of all sizes, and we welcome everyone. 
+                    Click the button below to learn more about the ways we can support you and your business.
+                </p>
+
+                <button onclick="window.location.href='directory.html';">Learn More!</button>
+
+            </div>
+        </article>
+
+        <div id="eventsAndWeather">
+        <article class="events" id="homeEvents">
+            <h3>Upcoming Events</h3>
+            <div>
+            <p>AUG 5: Hive Festival </p>
+            <p>SEPT 10: Little Bigtown </p>
+            <p>JULY 27: The Weeknd </p>
+            </div>
+        </article>
+
+        <article id="homeWeather">
+            <h3>Local Weather</h3>
+            <div id="wdiv">
+
+            </div>
+        </article>
+        </div>
+
+        <div id="homeImgCollage">
+            <img src="images/home-co3.jpg" alt="downtown Salt Lake">
+            <img src="images/home-co2.jpg" alt="Salt Lake sign">
+            <img src="images/home-co5.jpg" alt="Salt Lake building">
+            <img src="images/home-co.jpg" alt="downtown Salt Lake">
+            <img src="images/home-co4.jpg" alt="administration building">
+            <img src="images/home-co6.jpg" alt="downtown building">
+            <img src="images/home-co7.jpg" alt="city">
+            <img src="images/home-co8.jpg" alt="downtown">
+        </div>
+
+        <article id="homeForecast">
+            <h3>3 Day Forecast</h3>
+            <div id="fdiv">
+
+            </div>
+        </article>
+
+
+        <aside id="homeFeatured">
+            <h3>Featured Companies</h3>
+                <div>
+                    <h4>Hatch Family Chocolate</h4>
+                    <picture> 
+                        <img src="images/logo1.png" alt="Hatch logo">
+                    </picture>
+                </div>
+                <div>
+                    <h4>ReWhipped</h4>
+                    <picture>
+                        <img src="images/logo2.png" alt="Rewhipped logo">
+                    </picture>
+                </div>
+                <div>
+                    <h4>The Store</h4>
+                    <picture>
+                        <img src="images/logo3.png" alt="The Store logo">
+                    </picture>
+                </div>
+            </aside>
+    </main>
+
+        <aside id="preFoot">
+            <div>
+                <h3>Find Us</h3>
+                <a href="https://twitter.com/saltlakechamber"><img src="images/twit.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/saltlakechamber"><img src="images/fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/slchamber/"><img src="images/insta.png" alt="Instagram"></a>
+            </div>
+            <h3>Contact Us</h3>
+            <p>
+                Phone:
+                801-364-3631
+            </p>
+            <p>
+                Email:
+                info@slchamber.com
+            </p>
+            <p>
+                Address:
+                201 South Main Street #2300, <br>
+                Salt Lake City, UT 84111
+            </p>
+
+        </aside>
+        <footer>
+            <p>Salt Lake Chamber of Commerce | &copy; 2021 | <a href="attribution.html">Attributions</a> | Last Modified On: <span id="lastMod"></span></p>
+        </footer>
+    <script src="js/index.js" defer></script>
+</body>
+</html>

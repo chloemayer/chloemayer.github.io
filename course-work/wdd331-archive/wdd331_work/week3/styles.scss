@@ -1,0 +1,51 @@
+//color
+$body-background-color: darkblue;
+$form-background-color: lightgray;
+$input-color: blue;
+$headlines-color: white;
+
+//breakpoints
+$break-small: 20em;
+$break-medium: 30em;
+$break-large: 60em;
+
+
+
+@mixin center ($width, $max-width: 960px) {
+    width: $width;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body {
+    background-color: $body-background-color;
+}
+
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        color: $input-color;
+        flex: 2;
+    }
+    @media (min-width: $break-small) {
+        & {
+            @include center (90%, 700px);
+        }
+    }
+    @media (min-width: $break-medium) {
+        & {
+            @include center (80%, 850px);
+        }
+    }
+    @media (min-width: $break-large) {
+        & {
+            @include center (70%);
+        }
+    }
+}
+
+h1 {
+    color: $headlines-color;
+}

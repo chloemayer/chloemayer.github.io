@@ -1,0 +1,204 @@
+
+main {
+  max-width: 1500px;  
+ 
+  }
+
+  header {
+    display: flex;
+    align-items: flex-end;
+    background-color: #CFDBD5;
+    height: 90px;
+    padding-bottom: 20px;
+  }
+  
+    .web-name {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .logo img {
+      width: 40px;
+      padding: 10px 0px 0px 10px;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+      margin: 0px;
+      padding: 10px 5px 5px 8px;
+      color: #34344A;
+      font-family: 'Stint Ultra Expanded', sans-serif;
+    }
+    
+    .motto {
+      font-size: 12px;
+      padding: 0px 10px;
+      color: #34344A;
+      font-family: "Montserrat", sans-serif;
+    }
+    
+    .navUl {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+  
+    }
+  
+    .navUl a {
+      text-decoration: none;
+      display: block;
+      font-size: 15px;
+      color: #34344A;
+      font-family: 'Karma', serif;
+    }
+  
+    .navUl li {
+      display: none;
+      padding: 10px 0px;
+      border-bottom: 1px solid #333533;
+    }
+  
+    .navUl li:first-child {
+      display: block;
+    }
+  
+    .navUl li.active {
+      background-color: #CFDBD5;
+    }
+  
+    .navUl li:hover {
+      background-color: #F4F6F5;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      color: #34344A;
+      font-family: 'Karma', serif;
+      padding-left: 15px;
+    }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  fieldset {
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 15px;
+  }
+
+  p {
+    padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  legend {
+    padding: 0px 10px;
+    color: #34344A;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+
+  label.sec1, .sec2, .sec3, form > span {
+    display: block;
+    padding: 8px 0px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.sec1 input, .sec2 input, #textarea, select {
+    display: block;
+    padding: 11px;
+    width: 80%; 
+    font-family: 'Karma', serif;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 3px;
+  } 
+
+  div label, label div, datalist > option {
+    font-family: 'Karma', serif;
+    padding: 5px;
+  }
+
+  input:required {
+    border: 2px solid rgba(135, 23, 8, 0.8);
+  }
+
+  input:required:valid {
+    border: 2px solid rgba(68, 206, 5, 0.8);
+  }
+
+  #rangeSpan {
+    padding-left: 10px;
+    font-family: 'Karma', serif;
+    display: inline;
+  }
+
+  label > div:first-child {
+    margin-top: 10px;
+  }
+
+  .subButton {
+    width: 250px; 
+    padding: 15px 0px;
+    margin: 0px 0px 25px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color:#34344A;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .contactInfo {
+    padding: 25px 30px;
+    text-align: right;
+    background-color: #E8EDDF;
+  }
+  
+  .contactInfo div.push p {
+    line-height: 25px;
+    margin: 0px;
+    font-size: 12px;
+    color: #333533;
+  }
+  
+  .contactInfo div {
+    margin: 0px 15px;
+  }
+  
+  .contactInfo h3 {
+    margin: 0px;
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+  
+  .contactInfo > div:last-child img {
+    display: none;
+  }
+  
+  .contactInfo div:first-child .media-icons {
+    width: 30px;
+    padding: 0px 5px;
+    margin: 0 auto;
+  }
+  
+  footer div p{
+    background-color: #CFDBD5;
+    color: #34344A;
+    font-family: 'Karma', serif;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    line-height: 25px;
+    padding: 30px 15px;
+  }
+  
+  footer a {
+    color: #E35C3B;
+  }
+  
+  .responsive li {
+    display: block;
+  }

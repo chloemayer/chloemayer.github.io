@@ -1,0 +1,181 @@
+@media only screen and (min-width: 32.5em) {
+.pancakeBanner {
+  font-size: 1.5rem;
+}
+
+.bannerImg img {
+    width: 60px;
+}
+
+header {
+    height: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 10px 10px 7px 10px;
+}
+
+.motto {
+    font-size: 15px;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #333533;
+    min-width: 680px;
+}
+
+.navUl li {
+    display: block;
+    padding: 0px;
+    flex: 1 1 100%;
+    border-bottom: none;
+}
+
+.navUl li:first-child {
+    display: none;
+}
+
+.navUl a {
+    font-size: 17px;
+    padding: 20px 0px;
+}
+
+main {
+    margin: auto;
+    min-width: 630px;
+    max-width: 740px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 25px;
+}
+
+.summaryImg {
+  width: 110px;
+  float: left;
+  margin-right: 10px;
+}
+
+.summarySec {
+  position: absolute;
+  padding: 10px;
+  left: 50px;
+  width: auto;
+  height: auto;
+  background-color: rgba(237, 236, 236, 0.8);
+}
+
+.summarySec p {
+ margin: 0px;
+ line-height: 30px;
+ text-align: left;
+}
+
+.summarySec h3 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.summaryText p {
+  display: block;
+}
+
+.forecastSec {
+  display: block;
+  padding: 80px 20px 0px 20px;
+  margin: 10px auto;
+  height: 25rem;
+ }
+ 
+ .forecastSec h3 {
+  margin-bottom: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #34344A;
+  padding-left: 10px;
+ }
+ 
+ table {
+   padding: 0px;
+   margin: 10px auto;
+   border: 1px solid #333533;
+ }
+ 
+ table th {
+   padding: 30px 0px;
+   font-family: "Montserrat", sans-serif;
+   font-size: 18px;
+   min-width: 110px;
+   background-color: #34344A;
+   color: white;
+ }
+ 
+ td {
+   padding-top: 20px;
+   font-family: 'Karma', serif;
+   text-align: center;
+   font-size: 20px;
+ }
+ 
+ .w-icons {
+  width: 80px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+ }
+ 
+ .forecastTempTd {
+  word-spacing: 20px;
+  vertical-align: middle;
+  font-weight: bold;
+ }
+ 
+ .articleSec {
+   padding: 20px;
+   margin: 0px auto;
+   height: 40rem;
+ }
+ 
+ .articleSec img {
+   width: 300px;
+   float: right;
+   margin-left: 25px;
+   margin-bottom: 25px;
+   margin-right: 25px;
+ }
+
+ p {
+  font-size: 17px;
+}
+
+.contactInfo p {
+  font-size: 15px;
+}
+
+.contactInfo h4 {
+ font-size: 17px;
+ padding-bottom: 25px;
+}
+
+.contactInfoImg {
+  float: right;
+  margin-left: 30px;
+  display: block;
+  max-height: 12rem;
+}
+
+  p.topFooter,
+  p.bottomFooter {
+    font-size: 15px;
+  }
+}

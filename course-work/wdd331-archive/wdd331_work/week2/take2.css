@@ -1,0 +1,68 @@
+body {
+    font-size: 90%;
+}
+
+article.tabs {
+    position: relative;
+    width: 40em;
+    height: 15em;
+    margin: 2em auto;
+}
+
+[id ^= tab] {
+    position: absolute;
+    display: block;
+    top: 1.8em;
+    left: 0;
+    height: 12em;
+    padding: 10px 20px;
+	background-color: #ddd;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+	z-index: 0;
+}
+
+[id ^= tab]:first-child {
+    z-index: 1;
+}
+
+[id ^= tab] h2 {
+    position: absolute;
+	font-size: 1em;
+	font-weight: normal;
+	width: 120px;
+	height: 1.8em;
+	top: -1.8em;
+	left: 10px;
+	padding: 0;
+	margin: 0;
+	color: #999;
+	background-color: #ddd;
+	border-radius: 5px 5px 0 0;
+}
+
+[id ^= tab]:nth-child(2) h2 {
+    left: 132px;
+}
+
+[id ^= tab]:nth-child(3) h2 {
+    left: 254px;
+}
+
+[id ^= tab] h2 a {
+    display: block;
+	width: 100%;
+	line-height: 1.8em;
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+	outline: 0 none;
+}
+
+[id ^= tab]:target,
+[id ^= tab]:target h2
+{
+	color: #333;
+	background-color: #fff;
+	z-index: 2;
+}

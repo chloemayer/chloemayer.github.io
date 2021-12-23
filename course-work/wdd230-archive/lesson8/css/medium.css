@@ -1,0 +1,72 @@
+@media only screen and (min-width: 32.5em) {
+
+  .logo img {
+    width: 60px;
+}
+
+header {
+    height: 120px;
+    min-width: 680px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 10px 10px 7px 10px;
+}
+
+.motto {
+    font-size: 13px;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    border-bottom: 2px solid #333533;
+    min-width: 680px;
+}
+
+.navUl li {
+    display: block;
+    padding: 0px;
+    flex: 1 1 100%;
+    border-bottom: none;
+}
+
+.navUl li:first-child {
+    display: none;
+}
+
+.navUl a {
+    padding: 15px 0px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.contactInfo {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo > div:last-child img {
+  display: inline;
+  max-width: 100px;
+  float: right;
+  padding-right: 5px;
+}
+
+.contactInfo div:nth-child(2) .media-icons {
+  width: 30px;
+  padding-right: 5px;
+}
+
+footer div p {
+    font-size: 15px;
+  }
+}

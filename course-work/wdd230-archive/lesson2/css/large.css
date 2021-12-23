@@ -1,0 +1,18 @@
+@media only screen and (min-width: 60em) {
+    .contentDiv {
+        max-width: 1089px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #c2-content {
+        margin: 0px 15px 0px 15px;
+    }
+
+    #c3-content {
+        grid-column: span 1;
+        margin-top: 0px;
+    }
+}

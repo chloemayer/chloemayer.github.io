@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fill out the application form on this page in order to apply to become a member of the Salt Lake City Chamber of Commerce.">
+    <title>Join Form | SLC Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/slc-logo.png" alt="logo"></a> 
+        </div>
+        <nav>
+            <ul class="navU">
+                <li><a href="#" onclick="navButton()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li id="currentpg"><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="joinArticle">
+            <h1>Join ...</h1>             
+            <picture>
+                <img src="images/ex2.jpg" alt="Joseph Smith Memorial Building">
+            </picture>
+            <p>
+                Being a member of the Salt Lake City Chamber of Commerce can be an enormous advantage!
+                The organization is 5-star accredited by the United States Chamber of Commerce, and there 
+                are hundreds of deals and opportunities that your business will benefit from. Not only are 
+                there hundreds of special members-only deals, but you also get the opportunity of a lifetime 
+                by networking and teaming up with local businesses that have your interests in mind. There are 
+                4 different membership levels that you can choose from. The Gold membership is our highest 
+                level, but there is also Silver, Bronze, and Non-Profit. Fill out our short membership application 
+                below to get started!
+            </p>
+
+        </article>
+
+        <div>
+            <h2>Application</h2>
+            <p>Please fill out the information below, and submit.</p>
+
+            <form method="get" action="confirm.html" id="joinForm">
+                
+                    
+                <label>First Name* <input type="text" name="fname" minlength="3" required></label> 
+                <label>Last Name*<input type="text" name="lname" minlength="3" required></label>
+                <label>Title<input type="text" name="title"></label>
+                <label>Email* <input type="email" name="email" required></label> 
+                <label>Cell Phone <input type="tel" name="cnumber" placeholder="(123) 123- 1234"></label>
+                <label>Business Name* <input type="text" name="businessName" required></label> 
+                <label>Business Address <input type="text" name="businessAddress"></label>
+                <label>Business Website <input type="url" name="website"></label>
+                <label for="descp">Description of Business <textarea id="descp" name="descp" rows="6" cols="25"> </textarea></label>
+                
+                
+                <div id="radioButt">
+                    <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="ignore"><input type="radio" name="level">Non-profit ($100)</label> 
+                    <label class="ignore"><input type="radio" name="level">Bronze ($200)</label> 
+                    <label class="ignore"><input type="radio" name="level">Silver ($400)</label>
+                    <label class="ignore"><input type="radio" name="level">Gold ($1000)</label>
+                </fieldset>
+                </div>
+            
+                <div class="submit">
+                    <input type="submit" name="submit" value="Send my Form">
+                </div>
+             </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Salt Lake Chamber of Commerce | &copy; 2021 | <a href="attribution.html">Attributions</a> | Last Modified On: <span id="lastMod"></span></p>
+    </footer>
+    <script src="js/shared.js" defer></script>
+</body>
+</html>

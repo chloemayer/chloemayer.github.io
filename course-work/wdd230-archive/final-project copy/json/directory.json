@@ -1,0 +1,60 @@
+{
+    "businesses": [
+        {
+            "name": "Hatch Family Chocolate",
+            "contact": "801-532-4912",
+            "website": "https://www.hatchfamilychocolates.com/",
+            "src": "images/logo5.png", 
+            "alt": "Hatch Family Chocolate logo"
+        },
+        {
+            "name": "Rewhipped",
+            "contact": "801-666-6844",
+            "website": "https://rewhipped.com/",
+            "src": "images/logo6.png",
+            "alt": "Rewhipped logo"
+        },
+        {
+            "name": "The Store",
+            "contact": "801-272-1212",
+            "website": "https://www.thestorefinefoods.com/",
+            "src": "images/logo7.png",
+            "alt": "The Store logo"
+        },
+        {
+            "name": "Cactus and Tropicals",
+            "contact": "801-485-2542",
+            "website": "https://www.cactusandtropicals.com/",
+            "src": "images/logo8.png",
+            "alt": "Cactus and Tropicals logo"
+        },
+        {
+            "name": "Sweet Candy Company",
+            "contact": "(801) 886-1444",
+            "website": "https://www.sweetcandy.com/",
+            "src": "images/logo4.png",
+            "alt": "Sweet Candy Company logo"
+        },
+        {
+            "name": "Délice French Bakery & Café",
+            "contact": "801-953-1910",
+            "website": "https://delicebakeryslc.com/",
+            "src": "images/logo1.png",
+            "alt": " Délice French Bakery & Café logo"
+        },
+        {
+            "name": "SirsiDynix",
+            "contact": "800-288-8020",
+            "website": "https://www.sirsidynix.com/",
+            "src": "images/logo3.png",
+            "alt": "SirsiDynix logo"
+        },
+        {
+            "name": "97th Floor",
+            "contact": "801-341-1986",
+            "website": "https://www.97thfloor.com/",
+            "src": "images/logo2.png",
+            "alt": "97th Floor logo"
+        }
+    ]
+}

@@ -1,0 +1,255 @@
+@media only screen and (min-width: 32.5em) {
+.pancakeBanner {
+  font-size: 1.5rem;
+}
+
+header section {
+  padding: 20px 0px;
+}
+
+header section div#logo {
+  font-size: 13px;
+}
+  
+  h1 {
+    font-size: 3rem;
+}
+
+.navUl {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.navUl li {
+    display: block;
+    padding: 0px;
+    flex: 1 1 100%;
+}
+
+.navUl li:first-child {
+    display: none;
+}
+
+.navUl a {
+    padding: 15px 0px;
+}
+
+  h2 {
+    font-size: 3rem;
+  }
+
+ #heroDiv {
+  position: relative;
+} 
+
+#summarySec {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  display: flex;
+  padding: 20px;
+  width: 425px;
+  justify-content: space-between;
+}
+
+#summarySec h3 {
+  font-size: 2em;
+}
+
+#summarySec > div p {
+  text-align: right;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+#summarySec div p.hide {
+  display: block;
+}
+
+div#galleryDiv {
+  grid-template-columns: 1fr 1fr;
+}
+
+div#galleryDiv h2 {
+  grid-column: 1 / 4;
+}
+
+#lastVisitDiv p {
+  font-size: 25px;
+}
+
+main {
+  width: 85%;
+  grid-row-gap: 50px;
+}
+
+#forecastSec {
+  display: block;
+  padding: 30px 0px;
+}
+
+#fDiv {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(30px,156px));
+  justify-content: center;
+  grid-gap: 2px;
+  margin: 25px auto;
+  padding: 0px 20px 20px 20px;
+} 
+
+div.forecastColumn {
+  display: grid;
+  justify-items: center;
+  background-color: rgba(237, 236, 236, 0.486);
+  border: 1px solid rgb(52, 52, 74);
+ }
+
+div.forecastColumn:hover {
+  border: 2px solid rgb(52, 52, 74);
+}
+ 
+ .forecastWeekdays {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: rgb(52, 52, 74);
+  color: white;
+  text-align: center;
+  justify-self: stretch;
+  padding: 20px 0px;
+}
+
+.w-icons {
+  width: 80px;
+  padding-top: 10px;
+ }
+
+.forecastTemps {
+  font-size: 18px;
+  padding: 25px 0px;
+  font-weight: bold; 
+  font-family: "Montserrat", sans-serif;
+  }
+
+  section#eventsSec {
+    grid-template-columns: repeat(2, minmax(230px, 280px));
+    padding: 20px 0px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    }
+  
+    section#eventsSec picture img {
+      width: 100%;
+    }
+  
+    section#eventsSec p {
+      font-size: 12px;
+    }
+
+    section#articleSec {
+      padding-top: 20px;
+    }
+
+  div#townsSec .tArt {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 0px;
+    align-items: center;
+  }
+
+  div.tArt:nth-child(odd) .townImg img {
+    grid-column: 2;
+  }
+  
+  div.tArt:nth-child(odd) .townsData {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: right;
+    text-align: right;
+  }
+  
+  div.tArt:nth-child(even) .townsData {
+    padding-left: 20px;
+  }
+  
+  div#townsSec div.tArt .townImg img {
+    padding-bottom: 0px;
+  }
+  
+  div.tArt div.townsData {
+    border-left: none;
+  }
+  
+  .townsArt img {
+    padding: 20px;
+  }
+  
+  div#reportSec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  
+  div#reportSec div {
+    max-width: 350px;
+    justify-self: flex-end;
+    padding-right: 20px;
+  }
+  
+  div#reportSec img {
+    display: inline;
+    width: 100%;
+  }
+  
+  div#reportSec div {
+    padding-left: 20px;
+  }
+
+  div.tArt div.townsData {
+    margin-left: 0px;
+  }
+
+ p {
+  font-size: 15px;
+}
+
+div#subButton {
+  width: 250px;
+  margin-left: 20px;
+}
+
+
+aside#imgSec {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+aside#imgSec div {
+  max-width: 250px;
+  padding: 10px 20px;
+}
+
+aside#imgSec div img {
+  width: 100%;
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contactInfo div:last-child img {
+  display: inline;
+  float: right;
+}
+
+footer div p {
+    font-size: 15px;
+  }
+}

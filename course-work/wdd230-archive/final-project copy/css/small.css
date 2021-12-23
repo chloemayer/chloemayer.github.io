@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bitter&family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap');
+
+
+/* $color-1: #687f53; // Green Fern - Action color
+$color-2: #c5e1e1; // Powder Blue
+$color-3: #fa9583; // Vivid Tangerine
+$color-4: #f9af53; // Yellow Orange
+$color-5: #fffbeb; // Corn Silk 
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Lobster', cursive;*/
+
+body {
+    background-color: #fcfaf6;
+}
+
+#wwBanner {
+    display: none;
+}
+
+header div {
+    
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+#logo img {
+    max-width: 80%;
+}
+
+.navU {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navU a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+    color: #db9079;
+    border-top: 2px solid #db9079;
+    border-bottom: 2px solid #db9079;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+}
+
+.navU li {
+    display: none;
+
+}
+
+.navU li:first-child {
+    display: block;
+}
+
+.navU li:hover {
+    background-color: #F1BEAE;
+
+}
+
+.navU li a:hover {
+    color: #e27e27;
+    font-weight: bold;
+}
+
+#currentpg {
+    background-color: #e27e27;
+}
+
+#currentpg a {
+    color: #c5e1e1;
+}
+
+main {
+
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+}
+
+#centerMain {
+    justify-items: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', cursive; 
+    color: #e27e27;
+    text-align: center;
+}
+
+
+h1 {
+    text-shadow: 3px 5px #c5e1e1, 8px 10px #687f53;
+    font-size: 10em;
+    margin: 25px;
+    padding-bottom: 35px;
+}
+
+h2:first-of-type {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #687f53
+}
+
+
+ p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 5px;
+ }
+
+ ul {
+    font-family: 'Roboto', sans-serif;
+ }
+
+#homeHero picture {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#homeHero picture img {
+    width: 100%;
+}
+
+#homeHero h3 {
+    padding-left: 15px;
+}
+
+#homeDesc {
+    text-align: center;
+    max-width: 90%;
+}
+
+#homeDesc button {
+    border: none; 
+    background-color: #E6AB15;
+    color: #fffbeb;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+#eventsAndWeather {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events {
+    border: 3px solid #FA9583;
+    width: 90%;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 20px;
+}
+
+.events ul {
+    list-style: none;
+}
+
+#homeEvents {
+    margin: 10px auto;
+}
+
+#cityEvents {
+    max-width: 300px;
+    text-align: center;
+}
+
+#homeImgCollage, #homeFeatured, #homeForecast {
+    display: none;
+}
+
+#homeWeather {
+    padding: 10px 10px 20px 10px;
+    width: 90%;
+    margin: 10px auto;
+    ;
+    color: #fffbeb;
+    border: 3px solid #FA9583;
+}
+
+#cityArticle {
+    padding: 0px 20px 20px 20px;
+}
+
+#cityArticle img {
+    float: right;
+    margin: 0px 0px 15px 15px;
+    max-width: 100%;
+}
+
+#cityEvents + article {
+    display: none;
+}
+
+#joinArticle {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#joinForm {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 20px 0px;
+}
+
+#joinForm label, #joinForm p {
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Spartan', sans-serif;
+    margin: 0px;
+    font-size: 15px;
+}
+
+#joinForm legend {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    padding: 0px 3px;
+}
+
+#joinForm label input:required {
+    border: 2px solid #B10631;
+    border-radius: 2px;
+}
+
+#joinForm label input:required:valid {
+    border: 2px solid #70BD4C;
+}
+
+#joinForm input, #descp {
+    display: block;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+#joinForm > label input, #descp {
+    width: 80%;
+}
+
+#joinForm label.ignore {
+    padding: 0px 25px;
+    font-size: 12px;
+} 
+
+#joinForm label.ignore input {
+    margin-right: 10px;
+    display: inline;
+}
+
+div#radioButt {
+    margin: 0px 20px;
+    padding-top: 10px;
+}
+
+.submit {
+    margin: 20px;
+}
+
+.submit input {
+    font-family: 'Spartan', sans-serif;
+    font-size: 13px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 80%;
+    height: 40px;
+    background-color: #A8625E;
+    cursor: pointer;
+}
+
+div.x {
+    display: grid;
+    grid-template-columns: 230px;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+
+
+.drctCards {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgba(158, 99, 96, 0.4);
+    border-radius: 2px;
+    text-align: center;
+    height: 185px;
+}
+
+.drctCards h2 {
+    font-size: 1em;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.drctCards picture {
+    width: 100%;
+}
+
+.drctCards picture img{
+    max-width: 200px;
+    max-height: 80px;
+}
+
+.busCards p, p.drctLinks {
+    margin: 0px;
+    font-size: 11px;
+    display: inline;
+    overflow-wrap: anywhere;
+}
+#drctIcons div img {
+    cursor: pointer;
+}
+
+#contactMain {
+    justify-content: center;
+}
+
+#contactArticle div:first-child p:nth-child(even) {
+    font-family: 'Spartan', sans-serif;
+}
+
+#contactArticle div:first-child {
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#contactMap {
+    max-width: 90%;
+    padding: 15px 0px;
+    margin: 0 auto;
+}
+
+#contactMap iframe {
+    width: 100%;
+}
+
+#contactForm {
+    display: grid;
+    grid-template-columns: 95%;
+    justify-items: center;
+}
+
+#contactForm label {
+    display: block;
+    padding: 5px;
+    font-family: 'Spartan', sans-serif;
+}
+
+#contactForm label input, #contactForm textarea {
+    display: block;
+    margin: 3px 0px;
+    width: 90%;
+    padding: 10px;
+}
+
+#contactForm textarea {
+    font-family: 'Bitter', serif;
+    font-size: 11px;
+    color: rgb(58, 58, 58);
+}
+
+#contactGallery {
+    justify-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#confirm p, #confirm h2 {
+    padding: 0px 20px
+}
+
+#preFoot {
+    background-color: #c5e1e1;
+    padding: 15px;
+    
+}
+
+#preFoot div {
+    padding-top: 20px;
+}
+
+#preFoot div a {
+    padding: 5px;
+}
+
+footer {
+    background-color: #f79b2b;
+    padding: 20px;
+    
+}
+
+footer a {
+    color: #fffeb3;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.menu li {
+    display: block;
+}

@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma&family=Montserrat&family=Zen+Loop&display=swap');
+
+  
+.pancakeBanner {
+  background-color: rgb(245, 203, 92);
+  color: black;
+  font-size: 1rem;
+  padding: 15px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: rgb(207, 219, 213);
+  padding: 20px 0px;
+}
+
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header section div#logo  {
+    display: flex;
+    align-items: flex-end;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #h1 a{
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0px;
+    color: rgb(52, 52, 74);
+    font-family: 'Zen Loop', serif;
+  }
+
+  div#logo img {
+    padding-right: 10px;
+  }
+
+  .navUl {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    border-bottom: 2px solid rgb(207, 219, 213);
+  }
+
+  .navUl a {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: rgb(52, 52, 74);
+    font-family: 'Karma', serif;
+  }
+
+  .navUl li {
+    display: none;
+    padding: 10px 0px;
+  } 
+
+  .navUl li:first-child {
+    display: block;
+  }
+
+  .navUl li#active {
+    background-color: rgb(207, 219, 213);
+  }
+
+  .navUl li:hover {
+    background-color: rgb(244, 246, 245);
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: rgb(52, 52, 74);
+    font-family: 'Karma', serif;
+    padding-left: 20px;
+  }
+
+div#heroDiv picture {
+  max-width: 1920px;
+}
+
+div#heroDiv picture img {
+  display: block;
+  width: 100%; 
+  margin: 10px auto; 
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px auto;
+}
+
+h3 {
+  font-family: 'Karma', serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+#summarySec {
+  text-align: center;
+  background-color: rgba(237, 236, 236, 0.8);
+}
+
+#summarySec div p.hide {
+  display: none;
+}
+
+ #summarySec h3 {
+   margin: 0px;
+  }
+
+ #summarySec p {
+    margin: 0px;
+    line-height: 30px;
+ }
+
+ #forecastSec {
+  display: none;
+ }
+  
+div#townsSec {
+padding: 25px;
+background-color: rgb(232, 237, 223);
+}
+
+div#townsSec .tArt {
+  display: grid;
+  grid-template-columns:  minmax(100px, 270px);
+  padding: 30px 0px;
+  justify-content: center;
+}
+
+div#townsSec div.tArt .townImg {
+  max-width: 270px; 
+  width: 100%;
+  justify-self: center;
+}
+
+div#townsSec div.tArt .townImg img {
+  width: 100%; 
+  padding-bottom: 15px;
+}
+
+div#galleryDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+#lastVisitDiv p {
+  text-align: center;
+  font-size: 20px;
+}
+
+#galleryDiv figure img:hover { 
+  border: 1px solid rgb(52, 52, 74); 
+}
+
+#galleryDiv figure {
+  max-width: 330px;
+}
+
+#galleryDiv figure img {
+  width: 100%;      
+  margin: 0 auto;
+}
+
+#galleryDiv figure figcaption {
+  font-size: 12px;
+  padding: 0px 5px;
+}
+
+#townNews {
+  background-color: rgb(232, 237, 223);
+  padding: 30px;
+  margin: 10px 0px;
+}
+
+#townNews p {
+  margin: 0px;
+}
+
+section#eventsSec {
+  display: grid;
+  justify-items: center;   
+  }
+
+  section#eventsSec picture {
+    max-width: 280px;
+  }
+
+  section#eventsSec img {
+    width: 100%;
+    height: auto
+  }
+
+  section#eventsSec h2 {
+    margin: 0px 0px 10px 0px;
+    padding-top: 15px;
+    font-size: 2rem;
+  }
+
+  section#eventsSec p {
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+
+#articleSec picture {
+  width: 40%;
+  float: right;
+  max-width: 350px;
+  padding: 0px 0px 10px 10px;
+}
+
+#articleSec picture img {
+  width: 100%;
+  height: auto;
+}
+
+#articleSec p {
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+div.tArt div.townsData {
+  padding: 5px 20px;
+  margin-left: 15px;
+}
+
+div#reportSec {
+  padding: 20px;
+  background-color: rgb(232, 237, 223);
+}
+
+div#reportSec h3 {
+  color: rgb(52, 52, 74);
+  font-size: 2rem;
+  font-weight: bold; 
+  margin: 10px 0px;
+}
+
+div#reportSec h4 {
+  color: rgb(78, 85, 103);
+  font-family: "Montserrat", sans-serif;
+}
+
+div#reportSec ul.homeReport {
+  list-style: none;
+}
+
+ul.homeReport > li:hover {
+  font-weight: bold;
+}
+
+div#reportSec img {
+  display: none;
+}
+
+#formText h2 {
+  margin: 20px 10px 10px 10px;
+}
+
+#formText p {
+  padding-left: 15px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+fieldset {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px;
+}
+
+legend {
+  padding: 0px 10px;
+  color: rgb(52, 52, 74);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+label.sec, span.sec {
+  display: block;
+  padding: 8px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec input, #textarea, select {
+  display: block;
+  padding: 11px;
+  width: 80%;
+  font-family: 'Karma', serif;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 3px;
+} 
+
+div label, label div, datalist > option {
+  font-family: 'Karma', serif;
+  padding: 5px;
+}
+
+input:required {
+  border: 2px solid rgba(135, 23, 8, 0.8);
+}
+
+input:required:valid {
+  border: 2px solid rgba(68, 206, 5, 0.8);
+}
+
+#rangeSpan {
+  padding-left: 10px;
+  font-family: 'Karma', serif;
+  display: inline;
+}
+
+label > div:first-child {
+  margin-top: 10px;
+}
+
+div#subButton {
+  width: 195px; 
+  margin: 0px 0px 25px 15px;
+}
+
+div#subButton input {
+  width: 100%; 
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color:rgb(52, 52, 74);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+  aside#imgSec {
+    display: none;
+  }
+
+.contactInfo {
+  padding: 25px 30px;
+  text-align: right;
+  background-color: rgb(232, 237, 223);
+}
+
+.contactInfo div {
+  margin: 0px 15px;
+}
+
+.contactInfo h3 {
+  margin: 0px;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.contactInfo p {
+  margin: 0px;
+}
+
+.contactInfo div:last-child img {
+  display: none;
+  max-width: 250px; 
+}
+
+.media-icons {
+  padding: 0px 5px;
+}
+
+footer div p{
+  background-color: rgb(207, 219, 213);
+  color: rgb(52, 52, 74);
+  font-family: 'Karma', serif;
+  text-align: center;
+  margin: 0px;
+  line-height: 25px;
+  font-size: 10px;
+}
+
+footer p:first-child {
+  padding-top: 30px;
+}
+
+footer p:last-child {
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: rgb(182, 33, 6);
+}
+
+.responsive li {
+  display: block;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All general contact information is provided here, as well as a Contact Form and a list of our Board of Directors.">
+    <title>Contact Us | SLC Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/slc-logo.png" alt="logo"></a> 
+        </div>
+        <nav>
+            <ul class="navU">
+                <li><a href="#" onclick="navButton()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li id="currentpg"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>           
+
+            <main>
+                <article id="contactArticle">
+                    <div>
+                        <h1>Contact Us</h1>
+                            <p>Phone:</p>
+                            <p>801-364-3631</p>
+                            <p>Email:</p>
+                            <p>info@slchamber.com</p>
+                            <p>Address:</p>
+                            <p>201 South Main Street #2300<br>
+                            Salt Lake City, UT 84111</p>
+                    </div>
+                    <div id="contactMap"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15894.60790065622!2d-111.89744914012502!3d40.76374792061739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f513d6f6ab15%3A0x4be5eda424cce15a!2sSalt%20Lake%20Chamber!5e0!3m2!1sen!2sus!4v1626552461114!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </article>
+
+                <form method="get" action="confirm.html" id="contactForm">
+                    <h2>How can we help?</h2>
+                        <div id="f1">
+                            <label>First Name<input type="text" name="cfname"></label>
+                            <label>Last Name<input type="text" name="clname"></label>
+                            <label>Phone Number<input type="tel" name="cphone"></label>
+                            
+                        </div>
+                        <div id="f2">
+                            <label>Email<input type="email" name="cemail"></label>
+                            <label for="comments">Further Information
+                                <textarea id="comments" name="comments" rows="6" cols="30">Please provide any further information ... </textarea></label>
+                        </div>             
+
+                    <div class="submit">
+                        <input type="submit" name="submit" value="Send my Form">
+                    </div>
+                </form>
+
+
+                <article id="contactGallery">
+                    <h2>Our Board of Directors</h2>
+                    <figure>
+                        <img src="images/contact-gall.jpg" alt="John Doe">
+                            <figcaption>John Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/contact-gall2.jpg" alt="Jane Doe">
+                            <figcaption>Jane Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/contact-gall4.jpg" alt="Janet Doe">
+                            <figcaption> Janet Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/contact-gall3.jpg" alt="Jonathan Doe">
+                            <figcaption>Johnathan Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/contact-gall5.jpg" alt="Gabriel Susan Lewis">
+                            <figcaption>Gabriel Susan Lewis</figcaption>
+                    </figure>
+                    <figure>
+                            <img src="images/contact-gall6.jpg" alt="Jordan Doe">
+                            <figcaption>Jordan Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/contact-gall7.jpg" alt="J Doe">
+                            <figcaption>J Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/contact-gall8.jpg" alt="Jo Doe">
+                            <figcaption>Jo Doe</figcaption>
+                    </figure>
+                </article>
+
+            </main>
+        
+            <footer>
+                <p>Salt Lake Chamber of Commerce | &copy; 2021 | <a href="attribution.html">Attributions</a> | Last Modified On: <span id="lastMod"></span></p>
+            </footer>
+    <script src="js/shared.js" defer></script>
+</body>
+</html>

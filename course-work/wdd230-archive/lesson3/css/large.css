@@ -1,0 +1,21 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    main p {
+        font-size: 17px;
+    }
+
+    main li {
+        font-size: 17px;
+    }
+}

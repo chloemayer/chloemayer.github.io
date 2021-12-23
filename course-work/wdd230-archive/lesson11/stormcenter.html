@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fill out the form on our Storm Center page to report a storm near you.">
+    <title>Storm Center Report | Preston Update</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> 
+</head>
+<body>
+  <aside class="pancakeBanner">
+    Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+  </aside>
+  <header>
+    <section>
+        <div id="h1">
+          <a href="index.html"><h1>The Preston Update</h1></a>
+        </div>
+        <div id="logo">
+          <img src="images/logo.png" alt="black sun logo">
+          Current weather and news 24/7.
+        </div>
+    </section>
+  </header> 
+  <nav>
+    <ul class="navUl">
+      <li id="menuLi"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="preston.html" >Preston</a></li>
+      <li><a href="soda-springs.html" >Soda Springs</a></li>
+      <li><a href="fish-haven.html" >Fish Haven</a></li>
+      <li id="active"><a href="stormcenter.html" >Storm Center</a></li>
+      <li><a href="gallery.html" >Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div>
+      <section id="formText">
+        <h2>Storm Center</h2>
+        <p>Report a storm near you, below!</p>
+      </section>
+
+    <form method="get" action="thanks.html">
+      
+        <fieldset id="fs1">
+          <legend>Contact Information:</legend>
+              <label class="sec">Full Name* <input type="text" name="fname" pattern="[a-zA-Z0-9\s]+" minlength="5" required></label>
+              <label class="sec">Email <input type="email" name="email" placeholder="email_address@gmail.com"></label>
+              <label class="sec">Phone Number* <input type="tel" name="tel" required></label>
+              <label class="sec">Zip Code* <input type="number" name="zip" required></label>
+        </fieldset>
+
+        <fieldset id="fs2">
+          <legend>Storm Information</legend>
+            <label class="sec">Storm Date <input type="date" name="sDate"></label>
+            <label class="sec">Storm Type <input list="type" name="sType"> </label>
+                  <datalist id="type">
+                      <option value="Flash Flood">
+                      <option value="Hail">
+                      <option value="Hurricane">
+                      <option value="Thunderstorm">
+                      <option value="Tornado">
+                  </datalist>
+            <label class="sec" for="severity">Storm Severity</label>
+            <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" oninput="rangeCHange(this.value)" onchange="rangeChange(this.value)">
+            <div id="rangeSpan"> 5</div>
+            <datalist>
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="10"></option>
+            </datalist>
+            <label class="sec" for="region">Storm Region </label>
+              <select name="userDanger" id="region">
+                  <option value="" disabled selected>Select Region...</option>
+                  <option value="preston">Preston</option>
+                  <option value="sodasprings">Soda Springs</option>
+                  <option value="fishhaven">Fish Haven</option>
+              </select>   
+          </fieldset>
+
+        <fieldset id="fs3">
+          <legend>Further Information</legend>
+            <span class="sec">Are you in danger?</span>
+              <div>
+                <input type="radio" id="yes" name="danger"> 
+                <label for="yes"> Yes</label>
+              </div>
+              <div>
+                <input type="radio" id="maybe" name="danger"> 
+                <label for="maybe"> Maybe</label>
+              </div>
+              <div>
+                <input type="radio" id="no" name="danger"> 
+                <label for="no"> No</label>
+              </div>
+              <label for="textarea" class="sec">Additional Info</label>
+                <textarea id="textarea" name="textarea" rows="7" placeholder="Enter text here..."></textarea>
+        </fieldset>
+
+          <div id="subButton">
+            <input type="submit" name="submit" value="Send My Form" class="submitB">
+          </div>
+    </form>
+  </div>
+  </main>
+
+  <section class="contactInfo">
+    <div>
+        <h3>Contact Information</h3>
+        <p>Telephone: (123) 123-4567<br>Telephone: (123) 123-4567<br>Address: 123 S Street <br>Preston, ID 12345</p><br>
+    </div>
+    <div>
+      <h3>Connect with us!</h3>
+      <a href="https://instagram.com" target="blank"><img class="media-icons" src="images/insta-icon.png" alt="Instagram icon."></a> 
+      <a href="https://twitter.com/" target="blank"><img class="media-icons" src="images/tweeter-icon.png" alt="Twitter icon."></a> 
+      <a href="https://www.pinterest.com/" target="blank"><img class="media-icons" src="images/pin-icon.png" alt="Pinterest icon."></a> 
+      <a href="https://www.facebook.com/" target="blank"><img class="media-icons" src="images/fb-icon.png" alt="Facebook icon."></a> 
+  </div>
+    <div>
+      <img src="images/ss-foot.jpg" alt="city map">
+  </div>
+</section>
+
+<footer>
+<div>
+  <p> &copy; <span id="yearSpan"></span> | Chloe Mayer | <a href="#" target="blank">Terms of Use</a> | Current Date: <span id="currDateSpan"></span> </p>
+</div>
+</footer>
+<script src="js/stormcenter.js" defer></script>
+</body>
+</html>
