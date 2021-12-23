@@ -40,7 +40,8 @@ a:hover {
   color: #DBA00A; }
 
 header {
-  position: relative; }
+  position: relative;
+  background-color: white; }
 
 .sticky-top {
   position: static; }
@@ -55,6 +56,9 @@ h1 {
   position: absolute;
   top: 25%;
   left: 25%; }
+
+.body-portfolio {
+  background-color: #DBCBA4; }
 
 img {
   max-width: 100%;
