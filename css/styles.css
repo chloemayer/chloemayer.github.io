@@ -4,6 +4,13 @@ body, html {
   height: 100%;
   margin: 0; }
 
+html {
+  background-color: white; }
+
+body {
+  max-width: 2000px;
+  margin: auto; }
+
 .container-fluid {
   display: flex;
   justify-content: space-between;
@@ -43,16 +50,25 @@ header {
 .sticky-top {
   position: static; }
 
-.banner-wrapper {
-  position: relative; }
+.index-main-wrapper {
+  position: relative;
+  background-image: url("/images/placeholder.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover; }
 
 .index-h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 15rem;
+  left: 15rem;
   font-size: 5rem;
   text-align: center;
   color: white; }
+
+.portfolio-body {
+  background-color: #DBCBA4;
+  display: flex;
+  flex-direction: column; }
 
 .portfolio-main {
   height: 100%;
@@ -62,22 +78,54 @@ header {
 
 .portfolio-h1 {
   font-size: 5rem;
+  margin-bottom: 0;
   text-align: center;
   color: white; }
+
+.portfolio-body-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%; }
+
+.portfolio-body-content-divs {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* .portfolio-body-content-div-1 {
+    background-image: url("/images/commerce.jpg");
+    background-size: cover;
+}
+
+.portfolio-body-content-div-2 {
+    background-image: url("/images/zen.jpg");
+    background-size: cover;
+}
+
+.portfolio-body-content-div-3 {
+    background-image: url("/images/preston.jpg");
+    background-size: cover;
+} */
+.background-img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem; }
+  .background-img:hover {
+    filter: blur(1px);
+    box-shadow: 0px 0px 15px #7e7662; }
 
 .portfolio-body-content a {
   text-align: center;
   color: white;
-  font-size: 2rem; }
-
-.body-portfolio {
-  background-color: #DBCBA4; }
-
-img {
-  max-width: 100%;
-  max-height: fit-content; }
+  font-size: 1.5rem; }
 
 a:hover {
   color: #DBA00A; }
+
+footer {
+  height: 12rem;
+  background-color: white; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -47,7 +47,7 @@ header {
     padding: 0;
     text-align: center;
     margin: 0;
-    border-bottom: 2px solid rgb(207, 219, 213);
+    border-bottom: 1px solid rgb(207, 219, 213);
   }
 
   .navUl a {
