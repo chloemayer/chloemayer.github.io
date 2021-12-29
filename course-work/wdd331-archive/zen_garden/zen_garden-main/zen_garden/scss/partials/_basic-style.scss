@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: auto;
+  overflow-x: hidden;
+}
+
+
+header {
+  @include MQ(midS) {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 1rem 2rem;
+  &:before {
+    @include header-stripe;
+    background-color: $color-3; 
+    top: 275px;
+    $delay: 300ms;
+    @include animation($delay);
+    @include MQ(S) {
+      top: 345px;
+    }
+  }
+  &:after {
+    @include header-stripe;
+    background-color: $color-4; 
+    top: 270px;
+    $delay: 400ms;
+    @include animation($delay);
+    @include MQ(S) {
+      top: 340px;
+    }
+  }
+  }
+}
+  
+h1 {
+  @include MQ(midS) {
+    padding: 0px;
+    &:before {
+      @include header-stripe;
+      background-color: $color-7; 
+      top: 265px;
+      $delay: 500ms;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 335px;
+      }
+    }
+    &::after {
+      @include header-stripe;
+      background-color: $color-2; 
+      top: 260px;
+      $delay: 600ms;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 330px;
+      }
+    }
+  }
+}
+h2 {
+  @include MQ(midS) {
+    align-self: flex-end;
+    &::before {
+      @include header-stripe;
+      background-color: #6BA2A2;
+      top: 255px;
+      $delay: 700ms;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 325px;
+      }
+      }
+    &::after {
+      @include header-stripe;
+      background-color: $color-1; 
+      top: 250px;
+      $delay: 800ms;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 320px;
+      }
+    } 
+  }
+}
+  
+
+#zen-summary {
+  margin: 1rem;
+  &::before {
+    @include MQ(midS) {
+      @include header-stripe;
+      background-color: darken($color-3, 20%); 
+      top: 280px;
+      $delay: 200ms;
+      @include animation($delay);
+      @include MQ(S) {
+        top: 350px;
+      }
+    }
+  }
+  @include underline;
+  p:first-child {
+    font-style: italic;
+    padding: 0.8rem;
+    position: relative;
+
+    &::before {
+      @include quote(open-quote);
+      top: -2rem;
+      left: -1rem;
+    }
+
+    &::after {
+      @include quote(close-quote);
+      bottom: -4rem;
+      right: 0;
+    }
+  }
+}
+
+.preamble,
+.participation,
+.requirements {
+  @include underline;
+  text-align: center;
+  p {
+    color: $color-1;
+  }
+}
+.explanation,
+.benefits {
+  text-align: center;
+}
+
+header,
+.summary,
+.preamble,
+.participation,
+.explanation,
+.benefits,
+.requirements {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: lighten($color-4, 5%);
+  a {
+    text-decoration: none;
+    font-weight: 900;
+    color: darken($color-4, 15%);
+    transition: color 0.5s;
+  }
+
+  @include underline;
+}
+
+.wrapper {
+  position: fixed;
+  top: 1rem;
+  right: -14rem;
+  background-image: url("images/record.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 0px 0px;
+  transition: all 0.5s ease-in;
+
+  &:hover {
+    transform: translateX(-15rem);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+
+    @include MQ(XS) {
+      transform: translateX(-22rem);
+      transition: transform 0.5s ease-in;
+    }
+    @include MQ(S) {
+      transform: translateX(0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      background-color: inherit;
+      transition: transform 0.5s ease-in;
+    }
+  }
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  transform: translateX(9rem);
+  overflow: hidden;
+  transition: transform 1s ease-in;
+  margin-left: -2rem;
+  padding: 1rem;
+  background: lighten($color-4, 5%);
+
+  h3 {
+    margin-bottom: -0.5rem;
+  }
+
+  li {
+    list-style: none;
+    margin-left: -1.5rem;
+    padding-right: 1rem;
+    color: $color-1;
+    line-height: 1.5;
+
+    a {
+      text-decoration: none;
+      color: $color-1;
+
+      &:hover {
+        color: $color-5;
+      }
+    }
+  }
+
+  @include MQ(S) {
+    background-color: transparent;
+  }
+}
+
+span {
+  &.indicator {
+    font-size: 2rem;
+    position: relative;
+    top: 0.25rem;
+  }
+}

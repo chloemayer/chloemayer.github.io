@@ -1,0 +1,107 @@
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+@mixin transform($options) {
+  -webkit-transform: $options;
+  -moz-transform: $options;
+  -ms-transform: $options;
+  -o-transform: $options;
+  transform: $options;
+}
+
+@mixin transition($options) {
+  -webkit-transition: $options;
+  -moz-transition: $options;
+  transition: $options;
+}
+
+@mixin user-select($options) {
+  -webkit-user-select: $options;
+  -moz-user-select: $options;
+  -ms-user-select: $options;
+  user-select: $options;
+}
+
+@mixin appearance($option) {
+  -webkit-appearance: $option;
+  -moz-appearance: $option;
+  -ms-appearance: $option;
+  -o-appearance: $option;
+  appearance: $option;
+}
+
+@mixin quote($type-of-quote) {
+  content: $type-of-quote;
+  color: $color-4;
+  font-size: 5em;
+  position: absolute;
+}
+
+@mixin underline {
+  a {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: -2px;
+      background: linear-gradient(90deg, $color-2, $color-5);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.2s ease-in;
+    }
+
+    &:hover {
+      color: $color-3;
+
+      &::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+}
+
+@mixin header-stripe {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 0%;
+  left: 0;
+}
+
+@mixin stripe-basic {
+  content: '';
+  position: absolute;
+  height: 5px;
+}
+
+
+
+@mixin animation($delay) {
+  $timing: 1.5s;
+  animation-name: stripe;
+  animation-delay: $delay + 200ms;
+  animation-duration: $timing;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: normal; 
+}
+
+
+@mixin headhover {
+  $timing: 1.5s;
+  animation-name: headerhover;
+  animation-duration: $timing;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: normal; 
+}
