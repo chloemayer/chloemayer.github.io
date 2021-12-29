@@ -36,9 +36,6 @@ li {
   list-style: none;
   padding: .5rem 1rem; }
 
-a:hover {
-  color: #DBA00A; }
-
 header {
   position: relative;
   background-color: white; }
@@ -49,19 +46,38 @@ header {
 .banner-wrapper {
   position: relative; }
 
-h1 {
+.index-h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   font-size: 5rem;
   text-align: center;
+  color: white; }
+
+.portfolio-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.portfolio-h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: white; }
+
+.portfolio-body-content a {
+  text-align: center;
   color: white;
-  position: absolute;
-  top: 25%;
-  left: 25%; }
+  font-size: 2rem; }
 
 .body-portfolio {
   background-color: #DBCBA4; }
 
 img {
   max-width: 100%;
-  max-height: max-content; }
+  max-height: fit-content; }
+
+a:hover {
+  color: #DBA00A; }
 
 /*# sourceMappingURL=styles.css.map */

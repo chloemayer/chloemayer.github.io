@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@mixin main-text {
+    text-align: center;
+    color: white;
+}
 
 body, html {
     width: 100%;
@@ -47,10 +51,6 @@ li {
     padding: .5rem 1rem; 
 }
 
-a:hover {
-    color: #DBA00A;
-}
-
 header {
     position: relative;
     background-color: white;
@@ -64,14 +64,31 @@ header {
     position: relative;
 }
 
-h1 {
-    font-size: 5rem;
-    text-align: center;
-    color: white;
+.index-h1 {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    @include main-text;
 }
+
+.portfolio-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-h1 {
+    font-size: 5rem;
+    @include main-text;
+}
+
+.portfolio-body-content a { 
+    @include main-text;
+    font-size: 2rem;
+}
+
 
 .body-portfolio {
     background-color: #DBCBA4;
@@ -79,5 +96,9 @@ h1 {
 
 img {
     max-width: 100%;
-    max-height: max-content;
+    max-height: fit-content;
+}
+
+a:hover {
+    color: #DBA00A;
 }
