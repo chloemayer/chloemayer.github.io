@@ -3,11 +3,26 @@
     text-align: center;
     color: white;
 }
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 body, html {
     width: 100%;
     height: 100%;
     margin: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    max-width: 2000px;
+    margin: auto;
 }
 
 .container-fluid {
@@ -56,49 +71,93 @@ header {
     background-color: white;
 }
 
-.sticky-top {
+.sticky-top {      //**********************************************************
     position: static;
 }
 
-.banner-wrapper {
+.index-main-wrapper {
     position: relative;
+    background-image: url("/images/placeholder.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .index-h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 15rem;
+    left: 15rem;
     font-size: 5rem;
     @include main-text;
 }
 
+.portfolio-body {
+    background-color: #DBCBA4;
+    @include flex-column;
+}
+
 .portfolio-main {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: center;
 }
 
 .portfolio-h1 {
     font-size: 5rem;
+    margin-bottom: 0;
     @include main-text;
+}
+
+.portfolio-body-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.portfolio-body-content-divs {
+    //border: 2px solid white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .portfolio-body-content-div-1 {
+    background-image: url("/images/commerce.jpg");
+    background-size: cover;
+}
+
+.portfolio-body-content-div-2 {
+    background-image: url("/images/zen.jpg");
+    background-size: cover;
+}
+
+.portfolio-body-content-div-3 {
+    background-image: url("/images/preston.jpg");
+    background-size: cover;
+} */
+
+.background-img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    &:hover {
+    filter: blur(1px);
+    box-shadow: 0px 0px 15px #7e7662;
+    }
 }
 
 .portfolio-body-content a { 
     @include main-text;
-    font-size: 2rem;
-}
-
-
-.body-portfolio {
-    background-color: #DBCBA4;
-}
-
-img {
-    max-width: 100%;
-    max-height: fit-content;
+    font-size: 1.5rem;
 }
 
 a:hover {
     color: #DBA00A;
+}
+
+footer {
+    height: 12rem;
+    background-color: white;
 }
