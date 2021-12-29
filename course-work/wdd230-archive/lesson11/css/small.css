@@ -161,6 +161,7 @@ div#galleryDiv {
 #lastVisitDiv p {
   text-align: center;
   font-size: 20px;
+  padding: 0 10px;
 }
 
 #galleryDiv figure img:hover { 
@@ -347,6 +348,20 @@ div#subButton input {
   background-color:rgb(52, 52, 74);
   color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+.thanks-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.thanks-main {
+  height: 100%;
+}
+
+.thanks-main p {
+  padding: 0 10px;
 }
 
   aside#imgSec {

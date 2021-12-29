@@ -156,7 +156,25 @@ fetch(eventsURL)
 
     const towns = jObject['towns'];
     const fTowns = towns.filter(town => town.name == 'Soda Springs' || town.name =='Fish Haven' || town.name == 'Preston');
-    console.log(fTowns);
+    
+    let section = document.getElementById('eventsSec');
+    let h2 = document.createElement('h2');
+    let div = document.createElement('div');
+    let event = document.createElement('p');
+    let event1 = document.createElement('p');
+    let event2 = document.createElement('p');
+
+
+    h2.textContent = "Upcoming Events!";
+    event.textContent = fTowns[2].events[0];
+    event1.textContent = fTowns[2].events[1];
+    event2.textContent = fTowns[2].events[2];
+    
+    section.appendChild(div);
+    div.appendChild(h2);
+    div.appendChild(event);
+    div.appendChild(event1);
+    div.appendChild(event2);
 
 
 });
