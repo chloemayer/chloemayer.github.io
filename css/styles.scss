@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Pacifico&display=swap');
 
 $S: 25rem;
 $M: 45rem;
@@ -207,3 +208,26 @@ footer {
     height: 12rem;
     background-color: white;
 }
+
+
+//sig
+.main-wrapper {
+    background-color: #AF9992;
+    position: relative;
+    width: 600px;
+    height: 200px;
+}
+
+.posh, .baby, .basket {
+    font-family: 'Imprima', sans-serif;
+    display: inline;
+
+}
+
+
+.tag-wrapper {
+    font-family: 'Pacifico', cursive;
+
+}
+
+.tag-wrapper p {}
