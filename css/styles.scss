@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imprima&family=Pacifico&display=swap');
 
-$S: 25rem;
-$M: 45rem;
+$S: 25rem; // 400px
+$M: 45rem; // 720px
 
 @mixin mQ($canvas) {
     @if $canvas == S {
@@ -67,9 +67,15 @@ body {
 }
 
 .navbar-toggler {
-    display: none;
+    
+    @include mQ(M) {
+        display: none;
+    }
 }
 
+.active {
+    color: red;
+}
 
 //main both
 h1, h2, h3 {
@@ -116,14 +122,78 @@ header {
 
 
 //portfolio
-.portfolio-body {
-    
+.portfolio-main {
+    background-color: #DBCBA4;
+    padding: 2rem;
+}
+
+.portfolio-h1 {
+    text-align: center;
+}
+
+.portfolio-body-content {
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-items: center;
+}
+
+.portfolio-body-content-divs {
+    padding: 1rem 0;
+}
+
+.background-img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
     @include mQ(M) {
-        @include flex-column;
+        width: 15rem;
+        height: 15rem;
+    }
+    &:hover {
+    filter: blur(1px);
+    box-shadow: 0px 0px 15px #7e7662;
     }
 }
 
-.portfolio-main {
+.portfolio-body-content a { 
+    @include main-text;
+    font-size: 1.2rem;
+    @include mQ(M) {
+        font-size: 1.5rem;
+    }
+}
+
+a:hover {
+    color: #DBA00A;
+}
+
+footer {
+    height: 5rem;
+    background-color: white;
+}
+
+
+//sig
+.main-wrapper {
+    background-color: #AF9992;
+    position: relative;
+    width: 600px;
+    height: 200px;
+}
+
+.posh, .baby, .basket {
+    font-family: 'Imprima', sans-serif;
+    display: inline;
+
+}
+
+
+.tag-wrapper {
+    font-family: 'Pacifico', cursive;
+
+}
+
+/* .portfolio-main {
     background-color: #DBCBA4;
     padding: 2rem 0;
     @include mQ(M) {
@@ -161,7 +231,7 @@ header {
     
 }
 
-/* .portfolio-body-content-div-1 {
+ .portfolio-body-content-div-1 {
     background-image: url("/images/commerce.jpg");
     background-size: cover;
 }
@@ -175,59 +245,3 @@ header {
     background-image: url("/images/preston.jpg");
     background-size: cover;
 } */
-
-.background-img {
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    @include mQ(M) {
-        width: 15rem;
-        height: 15rem;
-    }
-    &:hover {
-    filter: blur(1px);
-    box-shadow: 0px 0px 15px #7e7662;
-    }
-}
-
-.portfolio-body-content a { 
-    @include main-text;
-    font-size: 1.2rem;
-    @include mQ(M) {
-        font-size: 1.5rem;
-    }
-}
-
-
-
-a:hover {
-    color: #DBA00A;
-}
-
-footer {
-    height: 12rem;
-    background-color: white;
-}
-
-
-//sig
-.main-wrapper {
-    background-color: #AF9992;
-    position: relative;
-    width: 600px;
-    height: 200px;
-}
-
-.posh, .baby, .basket {
-    font-family: 'Imprima', sans-serif;
-    display: inline;
-
-}
-
-
-.tag-wrapper {
-    font-family: 'Pacifico', cursive;
-
-}
-
-.tag-wrapper p {}
