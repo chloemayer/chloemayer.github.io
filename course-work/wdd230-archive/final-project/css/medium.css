@@ -46,13 +46,13 @@ header div#logos img:nth-child(2) {
     grid-template-columns: 50% 50%;
 }
 
-#homeImgCollage {
+/* #homeImgCollage {
     display: grid;
     grid-gap: 5px;
     margin-bottom: 20px;
     grid-template-columns: repeat(4, 150px);
     
-}
+} */
 
 #homeImgCollage img:first-child {
     grid-column: 1;
@@ -258,8 +258,9 @@ div#f2 {
     grid-column: 1 / 4;
 }
 
-#preFoot {
-    padding-left: 30px;
+.preFoot-wrap {
+    padding: 30px;
+
 }
 
 }

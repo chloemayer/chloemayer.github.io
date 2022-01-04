@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bitter&family=Spartan&display=swap');
 
+html, body {
+    height: 100%;
+}
+
 #wwBanner {
     display: none;
 }
@@ -64,6 +68,11 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 5em;
+}
+
+.attribution-main {
+    display: block;
+    height: 100%;
 }
 
 #centerMain {
