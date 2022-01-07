@@ -1,7 +1,0 @@
-node_modules
-*.css
-.css.map
-.cache
-.parcel-cache
-build
-**/.DS_Store
