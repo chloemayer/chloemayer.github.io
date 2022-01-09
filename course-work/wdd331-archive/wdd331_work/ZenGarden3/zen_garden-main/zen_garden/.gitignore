@@ -1,0 +1,8 @@
+node_modules
+*.css
+.css.map
+.cache
+.parcel-cache
+build
+**/.DS_Store
+.node_modules
