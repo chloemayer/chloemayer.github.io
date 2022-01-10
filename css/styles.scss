@@ -1,27 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imprima&family=Pacifico&display=swap');
 
-$XS: 25rem; // 400px
-$S: 45rem; // 720px
-$M: 53rem; // 850px
 
-@mixin mQ($canvas) {
-    @if $canvas == XS {
-        @media only screen and (min-width: $XS) {
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px,;
+$xxl: 1400px;
+
+@mixin media-breakpoint-up($canvas) {
+    @if $canvas == xs {
+        @media only screen and (min-width: $xs) {
             @content;
         }
     }
-    @else if $canvas == S {
-        @media only screen and (min-width: $S) {
+    @else if $canvas == sm {
+        @media only screen and (min-width: $sm) {
             @content;
         }
     }
-    @else if $canvas == M {
-        @media only screen and (min-width: $M) {
+    @else if $canvas == md {
+        @media only screen and (min-width: $md) {
             @content;
         }
     }
 }
+
+/* No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0)
+@include media-breakpoint-up(sm) { ... } 576px
+@include media-breakpoint-up(md) { ... } 768px
+@include media-breakpoint-up(lg) { ... } 992px
+@include media-breakpoint-up(xl) { ... } 1200px
+@include media-breakpoint-up(xxl) { ... } 1400px
+*/
+
+
+
 @mixin main-text {
     text-align: center;
     color: white;
@@ -45,7 +60,7 @@ html {
 
 body {
     margin: auto;
-    @include mQ(M) {
+    @include media-breakpoint-up(md) {
         max-width: 2000px;
     }
 }
@@ -103,18 +118,26 @@ header {
 
 .portfolio-h1 {
     text-align: center;
+    padding: 2rem 0;
 }
 
-.background-img {
+h3 {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.card, .card-body * {
+    background-color: #DBCBA4; 
+    border: none;
+}
+
+.card-img-top {
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    @include mQ(M) {
-        width: 15rem;
-        height: 15rem;
+    max-width: 300px;
+    @include media-breakpoint-up(sm) { 
+    max-width: 400px;
     }
     &:hover {
-    filter: blur(1px);
     box-shadow: 0px 0px 15px #7e7662;
     }
 }
