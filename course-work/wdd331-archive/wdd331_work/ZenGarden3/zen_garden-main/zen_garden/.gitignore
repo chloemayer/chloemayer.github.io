@@ -1,5 +1,5 @@
 node_modules
-*.css
+//*.css
 .css.map
 .cache
 .parcel-cache

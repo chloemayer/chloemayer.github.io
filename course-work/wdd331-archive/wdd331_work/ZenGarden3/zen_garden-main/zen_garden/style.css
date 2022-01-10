@@ -1,0 +1,924 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: auto;
+  overflow-x: hidden; }
+
+@media only screen and (min-width: 38rem) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 1rem 2rem; }
+    header:before {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 0%;
+      left: 0;
+      background-color: #F99C62;
+      top: 275px;
+      animation-name: stripe;
+      animation-delay: 500ms;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-direction: normal; } }
+    @media only screen and (min-width: 38rem) and (min-width: 48rem) {
+      header:before {
+        top: 345px; } }
+@media only screen and (min-width: 38rem) {
+    header:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 0%;
+      left: 0;
+      background-color: #FDD9C3;
+      top: 270px;
+      animation-name: stripe;
+      animation-delay: 600ms;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-direction: normal; } }
+    @media only screen and (min-width: 38rem) and (min-width: 48rem) {
+      header:after {
+        top: 340px; } }
+
+@media only screen and (min-width: 38rem) {
+  h1 {
+    padding: 0px; }
+    h1:before {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 0%;
+      left: 0;
+      background-color: #fffbea;
+      top: 265px;
+      animation-name: stripe;
+      animation-delay: 700ms;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-direction: normal; } }
+    @media only screen and (min-width: 38rem) and (min-width: 48rem) {
+      h1:before {
+        top: 335px; } }
+@media only screen and (min-width: 38rem) {
+    h1::after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 0%;
+      left: 0;
+      background-color: #c5e1e1;
+      top: 260px;
+      animation-name: stripe;
+      animation-delay: 800ms;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-direction: normal; } }
+    @media only screen and (min-width: 38rem) and (min-width: 48rem) {
+      h1::after {
+        top: 330px; } }
+
+@media only screen and (min-width: 38rem) {
+  h2 {
+    align-self: flex-end; }
+    h2::before {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 0%;
+      left: 0;
+      background-color: #6BA2A2;
+      top: 255px;
+      animation-name: stripe;
+      animation-delay: 900ms;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-direction: normal; } }
+    @media only screen and (min-width: 38rem) and (min-width: 48rem) {
+      h2::before {
+        top: 325px; } }
+@media only screen and (min-width: 38rem) {
+    h2::after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 0%;
+      left: 0;
+      background-color: #106262;
+      top: 250px;
+      animation-name: stripe;
+      animation-delay: 1000ms;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-direction: normal; } }
+    @media only screen and (min-width: 38rem) and (min-width: 48rem) {
+      h2::after {
+        top: 320px; } }
+
+#zen-summary {
+  margin: 1rem; }
+  @media only screen and (min-width: 38rem) {
+    #zen-summary::before {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 0%;
+      left: 0;
+      background-color: #ec6009;
+      top: 280px;
+      animation-name: stripe;
+      animation-delay: 400ms;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-direction: normal; } }
+  @media only screen and (min-width: 38rem) and (min-width: 48rem) {
+    #zen-summary::before {
+      top: 350px; } }
+
+  #zen-summary a {
+    position: relative; }
+    #zen-summary a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: -2px;
+      background: linear-gradient(90deg, #c5e1e1, #F88512);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.2s ease-in; }
+    #zen-summary a:hover {
+      color: #F99C62; }
+      #zen-summary a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left; }
+  #zen-summary p:first-child {
+    font-style: italic;
+    padding: 0.8rem;
+    position: relative; }
+    #zen-summary p:first-child::before {
+      content: open-quote;
+      color: #FDD9C3;
+      font-size: 5em;
+      position: absolute;
+      top: -2rem;
+      left: -1rem; }
+    #zen-summary p:first-child::after {
+      content: close-quote;
+      color: #FDD9C3;
+      font-size: 5em;
+      position: absolute;
+      bottom: -4rem;
+      right: 0; }
+
+.preamble,
+.participation,
+.requirements {
+  text-align: center; }
+  .preamble a,
+  .participation a,
+  .requirements a {
+    position: relative; }
+    .preamble a::after,
+    .participation a::after,
+    .requirements a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: -2px;
+      background: linear-gradient(90deg, #c5e1e1, #F88512);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.2s ease-in; }
+    .preamble a:hover,
+    .participation a:hover,
+    .requirements a:hover {
+      color: #F99C62; }
+      .preamble a:hover::after,
+      .participation a:hover::after,
+      .requirements a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left; }
+  .preamble p,
+  .participation p,
+  .requirements p {
+    color: #106262; }
+
+.explanation,
+.benefits {
+  text-align: center; }
+
+header,
+.summary,
+.preamble,
+.participation,
+.explanation,
+.benefits,
+.requirements {
+  padding: 1rem;
+  margin: 1rem; }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: #fee9dc; }
+  footer a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #fbaa79;
+    transition: color 0.5s; }
+  footer a {
+    position: relative; }
+    footer a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: -2px;
+      background: linear-gradient(90deg, #c5e1e1, #F88512);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.2s ease-in; }
+    footer a:hover {
+      color: #F99C62; }
+      footer a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left; }
+
+.wrapper {
+  position: fixed;
+  top: 1rem;
+  right: -14rem;
+  background-image: url("images/record.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 0px 0px;
+  transition: all 0.5s ease-in; }
+  .wrapper:hover {
+    transform: translateX(-15rem);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); }
+    @media only screen and (min-width: 29rem) {
+      .wrapper:hover {
+        transform: translateX(-22rem);
+        transition: transform 0.5s ease-in; } }
+    @media only screen and (min-width: 48rem) {
+      .wrapper:hover {
+        transform: translateX(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        background-color: inherit;
+        transition: transform 0.5s ease-in; } }
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  transform: translateX(9rem);
+  overflow: hidden;
+  transition: transform 1s ease-in;
+  margin-left: -2rem;
+  padding: 1rem;
+  background: #fee9dc; }
+  .design-selection h3,
+  .design-archives h3,
+  .zen-resources h3 {
+    margin-bottom: -0.5rem; }
+  .design-selection li,
+  .design-archives li,
+  .zen-resources li {
+    list-style: none;
+    margin-left: -1.5rem;
+    padding-right: 1rem;
+    color: #106262;
+    line-height: 1.5; }
+    .design-selection li a,
+    .design-archives li a,
+    .zen-resources li a {
+      text-decoration: none;
+      color: #106262; }
+      .design-selection li a:hover,
+      .design-archives li a:hover,
+      .zen-resources li a:hover {
+        color: #F88512; }
+  @media only screen and (min-width: 48rem) {
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+      background-color: transparent; } }
+
+span.indicator {
+  font-size: 2rem;
+  position: relative;
+  top: 0.25rem; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-size: 3rem;
+  font-family: "Lobster", cursive;
+  color: #f86308;
+  margin-top: 0;
+  animation: lobster 3.5s infinite alternate-reverse linear; }
+  @media only screen and (min-width: 38rem) {
+    h1 {
+      font-size: 4.5rem; } }
+  @media only screen and (min-width: 48rem) {
+    h1 {
+      font-size: 6rem;
+      margin: 0; } }
+  @media only screen and (min-width: 64rem) {
+    h1 {
+      font-size: 8rem; } }
+
+h2 {
+  color: #ec6009;
+  font-size: 1rem; }
+  @media only screen and (min-width: 38rem) {
+    h2 {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 48rem) {
+    h2 {
+      margin: 2rem;
+      padding: 0;
+      font-size: 1.5rem; } }
+
+abbr[title] {
+  text-decoration: none; }
+
+h3 {
+  font-family: "Lobster", cursive;
+  color: #106262;
+  font-size: 2rem;
+  margin-top: 0; }
+  @media only screen and (min-width: 48rem) {
+    h3 {
+      font-size: 2.5rem; } }
+
+p {
+  color: #106262;
+  font-size: 1rem; }
+  @media only screen and (min-width: 48rem) {
+    p {
+      line-height: 150%; } }
+  @media only screen and (min-width: 64rem) {
+    p {
+      line-height: 175%; } }
+
+p a {
+  color: #ec6009;
+  text-decoration: none;
+  font-weight: bold; }
+
+section > h2::before {
+  /* number before each section title */
+  color: #fbaa79; }
+
+@media only screen and (min-width: 48rem) {
+  .summary p:first-child {
+    color: #FDD9C3;
+    font-size: 1.2rem; } }
+
+@media only screen and (min-width: 48rem) {
+  .summary p:last-child {
+    font-size: 2rem;
+    font-family: "Lobster", cursive; } }
+@media only screen and (min-width: 64rem) {
+  .summary p:last-child {
+    font-size: 3rem; } }
+
+@media only screen and (min-width: 64rem) {
+  .summary p a {
+    font-size: 3rem; } }
+
+@media only screen and (min-width: 48rem) {
+  .design-selection h3,
+  .design-archives h3,
+  .zen-resources h3 {
+    color: #ec6009; } }
+@media only screen and (min-width: 48rem) {
+  .design-selection li,
+  .design-selection li a,
+  .design-archives li,
+  .design-archives li a,
+  .zen-resources li,
+  .zen-resources li a {
+    color: #F99C62; } }
+@media only screen and (min-width: 48rem) {
+  .design-selection li a:hover,
+  .design-archives li a:hover,
+  .zen-resources li a:hover {
+    color: #FDD9C3; } }
+
+@media only screen and (min-width: 48rem) {
+  .requirements p {
+    font-size: 0.8rem;
+    color: #FDD9C3; } }
+@media only screen and (min-width: 48rem) {
+  .requirements p:last-child {
+    font-size: 1.6rem;
+    font-family: "Lobster", cursive; } }
+@media only screen and (min-width: 48rem) {
+  .requirements h3 {
+    color: #FDD9C3; } }
+
+footer a {
+  color: #106262;
+  font-weight: bold; }
+
+@media only screen and (min-width: 48rem) {
+  body {
+    background: white;
+    font-family: "Roboto", sans-serif;
+    max-width: 1200px; } }
+
+@media only screen and (min-width: 48rem) {
+  .summary p:nth-child(2) {
+    grid-area: sum;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 2rem;
+    width: 100%;
+    margin: auto 0;
+    background-color: #d6eaea; } }
+
+@media only screen and (min-width: 48rem) {
+  .requirements, footer {
+    margin-left: -32.6rem;
+    margin-right: 0; } }
+@media only screen and (min-width: 56rem) {
+  .requirements, footer {
+    margin-left: -36rem; } }
+@media only screen and (min-width: 64rem) {
+  .requirements, footer {
+    margin-left: -40.5rem; } }
+
+@media only screen and (min-width: 48rem) {
+  #zen-summary {
+    margin: 0; }
+    #zen-summary p:first-child {
+      line-height: 200%; }
+      #zen-summary p:first-child::before {
+        top: 3rem;
+        left: -4rem;
+        font-size: 8em; }
+      #zen-summary p:first-child::after {
+        bottom: -1rem;
+        right: 1rem; }
+
+  .summary {
+    grid-area: summary;
+    padding: 4rem 4rem;
+    text-align: center;
+    display: flex;
+    background-image: url("images/record-bkgd.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    align-items: center; }
+
+  .preamble,
+  .participation,
+  .requirements {
+    text-align: left; }
+    .preamble p::after,
+    .participation p::after,
+    .requirements p::after {
+      content: "";
+      border-top: 2px dotted #FDD9C3;
+      width: 50%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+
+  .explanation,
+  .benefits {
+    text-align: right; }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "intro intro" "sidebar main"; } }
+@media only screen and (min-width: 48rem) and (min-width: 48rem) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr .5fr .3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "summary preamble" "sum sum";
+    grid-area: intro;
+    position: relative; } }
+@media only screen and (min-width: 48rem) and (min-width: 64rem) {
+  .intro {
+    grid-auto-rows: 1fr .5fr .35fr; } }
+@media only screen and (min-width: 48rem) and (min-width: 75rem) {
+  .intro {
+    grid-auto-rows: 1fr .5fr .5fr; } }
+
+@media only screen and (min-width: 48rem) {
+  .preamble {
+    grid-area: preamble; } }
+@media only screen and (min-width: 48rem) and (min-width: 48rem) {
+  header {
+    grid-area: header; } }
+
+@media only screen and (min-width: 48rem) {
+  header:hover::before,
+  header:hover::after,
+  header:hover h1::before,
+  header:hover h1::after,
+  header:hover h2::before,
+  header:hover h2::after,
+  header:hover + div#zen-summary::before {
+    width: 100%;
+    animation-name: headerhover;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal; }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
+    grid-area: main; }
+
+  .explanation {
+    grid-area: explanation; }
+
+  .participation {
+    grid-area: participation;
+    position: relative; } }
+@media only screen and (min-width: 48rem) and (min-width: 48rem) {
+  .benefits {
+    grid-area: benefits;
+    margin-left: -32.5rem;
+    margin-right: 0;
+    padding: 2rem; }
+    .benefits h3 {
+      margin-top: 0; } }
+@media only screen and (min-width: 48rem) and (min-width: 56rem) {
+  .benefits {
+    margin-left: -32.5rem;
+    padding: 3rem 2rem 2rem; } }
+@media only screen and (min-width: 48rem) and (min-width: 64rem) {
+  .benefits {
+    margin-left: -40.5rem; } }
+@media only screen and (min-width: 48rem) and (min-width: 75rem) {
+  .benefits {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 3.5rem 2rem;
+    background-color: #fee9dc; } }
+
+@media only screen and (min-width: 48rem) {
+  .requirements {
+    grid-area: requirements;
+    column-count: 2;
+    column-width: auto;
+    column-gap: 2rem;
+    padding: 5rem 5rem 9rem;
+    justify-self: center;
+    background-image: url("images/record-bkgd.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%; } }
+  @media only screen and (min-width: 48rem) and (min-width: 75rem) {
+    .requirements {
+      margin-top: 0; } }
+@media only screen and (min-width: 48rem) {
+    .requirements h3 {
+      column-span: all;
+      margin-top: 0; }
+    .requirements p:first-of-type {
+      margin-top: 0; }
+
+  .requirements p:last-child {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    left: 0px;
+    padding: 2rem 5rem;
+    margin-top: 2rem; } }
+  @media only screen and (min-width: 48rem) and (min-width: 75rem) {
+    .requirements p:last-child {
+      top: 400px; } }
+
+@media only screen and (min-width: 48rem) {
+  footer {
+    align-items: flex-end;
+    grid-area: footer;
+    height: 200px;
+    padding: 1.5rem; }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "wrapper";
+    grid-area: sidebar; }
+
+  .wrapper {
+    background-image: none;
+    position: fixed;
+    overflow: visible; } }
+  @media only screen and (min-width: 48rem) and (min-width: 48rem) {
+    .wrapper {
+      width: 70rem;
+      height: 70rem; } }
+  @media only screen and (min-width: 48rem) and (min-width: 56rem) {
+    .wrapper {
+      width: 73rem;
+      height: 73rem; } }
+  @media only screen and (min-width: 48rem) and (min-width: 64rem) {
+    .wrapper {
+      width: 78rem;
+      height: 78rem; } }
+@media only screen and (min-width: 48rem) {
+    .wrapper::before {
+      content: "";
+      position: relative;
+      top: -80rem;
+      right: 18%;
+      z-index: -100;
+      background: url("images/record.svg") 0 0 repeat;
+      width: 68rem;
+      height: 68rem;
+      background-repeat: no-repeat;
+      animation: rotation 20s linear infinite; } }
+    @media only screen and (min-width: 48rem) and (min-width: 56rem) {
+      .wrapper::before {
+        width: 73rem;
+        height: 73rem; } }
+    @media only screen and (min-width: 48rem) and (min-width: 64rem) {
+      .wrapper::before {
+        width: 78rem;
+        height: 78rem; } }
+@media only screen and (min-width: 48rem) {
+    .wrapper::after {
+      display: none; }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%; }
+    to {
+      transform: rotate(359deg);
+      transform-origin: 50% 50%; } }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 20rem 30rem;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "design-archives" "design-selection" "zen-resources";
+    grid-area: wrapper;
+    position: relative;
+    margin-top: 15rem;
+    margin-left: -37.5rem;
+    width: 100%; }
+    .wrapper:hover {
+      transform: scale(1.005);
+      transition: transform 0.3s; }
+      .wrapper:hover:before {
+        animation-play-state: paused;
+        cursor: pointer; } }
+@media only screen and (min-width: 48rem) and (min-width: 48rem) {
+  .design-selection {
+    grid-area: design-selection;
+    align-items: center;
+    transform: translate(13rem, 0rem);
+    margin-left: 25%;
+    margin-top: -5rem;
+    width: 35%; } }
+@media only screen and (min-width: 48rem) and (min-width: 56rem) {
+  .design-selection {
+    margin-left: 30%;
+    margin-top: 0; } }
+
+@media only screen and (min-width: 48rem) and (min-width: 48rem) {
+  .design-archives {
+    grid-area: design-archives;
+    transform: translate(8rem, -1rem);
+    align-items: center;
+    margin-left: 25%;
+    margin-top: -1rem; } }
+@media only screen and (min-width: 48rem) and (min-width: 56rem) {
+  .design-archives {
+    margin-left: 30%;
+    margin-top: 4rem; } }
+
+@media only screen and (min-width: 48rem) and (min-width: 48rem) {
+  .zen-resources {
+    grid-area: zen-resources;
+    transform: translate(8rem, -1rem);
+    margin-left: 25%;
+    margin-top: -5rem;
+    width: 35%; } }
+@media only screen and (min-width: 48rem) and (min-width: 56rem) {
+  .zen-resources {
+    margin-left: 30%;
+    margin-top: 0; } }
+
+@media only screen and (min-width: 64rem) {
+  .requirements {
+    column-count: 3;
+    column-width: auto;
+    max-width: fit-content; }
+
+  #zen-summary p:first-child {
+    padding: 0 4rem 1rem 4rem; }
+    #zen-summary p:first-child::before {
+      top: 2rem;
+      left: -1rem; }
+    #zen-summary p:first-child::after {
+      right: 3rem; }
+
+  .summary * {
+    font-size: 1.2rem; } }
+@keyframes stripe {
+  0% {
+    width: 0%; }
+  25% {
+    width: 25%; }
+  50% {
+    width: 50%; }
+  75% {
+    width: 75%; }
+  100% {
+    width: 100%; } }
+@keyframes headerhover {
+  0% {
+    width: 100%; }
+  25% {
+    width: 75%; }
+  50% {
+    width: 50%; }
+  75% {
+    width: 25%; }
+  100% {
+    width: 0%; } }
+@keyframes lobster {
+  0% {
+    text-shadow: 1px 1px #0F5959, 2px 2px #0F5959, 3px 3px #F99C62, 4px 4px #F99C62, 5px 5px #F98F4E, 6px 6px #F98F4E, 7px 7px #c5e1e1, 8px 8px #c5e1e1, 9px 9px #6BA2A2, 10px 10px #6BA2A2, 11px 11px #106262, 12px 12px #106262, 25px 25px #EBEBEB; }
+  20% {
+    text-shadow: 1px 1px #106262, 2px 2px #106262, 3px 3px #0F5959, 4px 4px #0F5959, 5px 5px #F99C62, 6px 6px #F99C62, 7px 7px #F98F4E, 8px 8px #F98F4E, 9px 9px #c5e1e1, 10px 10px #c5e1e1, 11px 11px #6BA2A2, 12px 12px #6BA2A2, 25px 25px #EBEBEB; }
+  40% {
+    text-shadow: 1px 1px #6BA2A2, 2px 2px #6BA2A2, 3px 3px #106262, 4px 4px #106262, 5px 5px #0F5959, 6px 6px #0F5959, 7px 7px #F99C62, 8px 8px #F99C62, 9px 9px #F98F4E, 10px 10px #F98F4E, 11px 11px #c5e1e1, 12px 12px #c5e1e1, 25px 25px #EBEBEB; }
+  60% {
+    text-shadow: 1px 1px #c5e1e1, 2px 2px #c5e1e1, 3px 3px #6BA2A2, 4px 4px #6BA2A2, 5px 5px #106262, 6px 6px #106262, 7px 7px #0F5959, 8px 8px #0F5959, 9px 9px #F99C62, 10px 10px #F99C62, 11px 11px #F98F4E, 12px 12px #F98F4E, 25px 25px #EBEBEB; }
+  80% {
+    text-shadow: 1px 1px #F98F4E, 2px 2px #F98F4E, 3px 3px #c5e1e1, 4px 4px #c5e1e1, 5px 5px #6BA2A2, 6px 6px #6BA2A2, 7px 7px #106262, 8px 8px #106262, 9px 9px #0F5959, 10px 10px #0F5959, 11px 11px #F99C62, 12px 12px #F99C62, 25px 25px #EBEBEB; }
+  100% {
+    text-shadow: 1px 1px #F99C62, 2px 2px #F99C62, 3px 3px #F98F4E, 4px 4px #F98F4E, 5px 5px #c5e1e1, 6px 6px #c5e1e1, 7px 7px #6BA2A2, 8px 8px #6BA2A2, 9px 9px #106262, 10px 10px #106262, 11px 11px #0F5959, 12px 12px #0F5959, 25px 25px #EBEBEB; } }
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-size: 3rem;
+  font-family: "Lobster", cursive;
+  color: #f86308;
+  margin-top: 0;
+  animation: lobster 3.5s infinite alternate-reverse linear; }
+  @media only screen and (min-width: 38rem) {
+    h1 {
+      font-size: 4.5rem; } }
+  @media only screen and (min-width: 48rem) {
+    h1 {
+      font-size: 6rem;
+      margin: 0; } }
+  @media only screen and (min-width: 64rem) {
+    h1 {
+      font-size: 8rem; } }
+
+h2 {
+  color: #ec6009;
+  font-size: 1rem; }
+  @media only screen and (min-width: 38rem) {
+    h2 {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 48rem) {
+    h2 {
+      margin: 2rem;
+      padding: 0;
+      font-size: 1.5rem; } }
+
+abbr[title] {
+  text-decoration: none; }
+
+h3 {
+  font-family: "Lobster", cursive;
+  color: #106262;
+  font-size: 2rem;
+  margin-top: 0; }
+  @media only screen and (min-width: 48rem) {
+    h3 {
+      font-size: 2.5rem; } }
+
+p {
+  color: #106262;
+  font-size: 1rem; }
+  @media only screen and (min-width: 48rem) {
+    p {
+      line-height: 150%; } }
+  @media only screen and (min-width: 64rem) {
+    p {
+      line-height: 175%; } }
+
+p a {
+  color: #ec6009;
+  text-decoration: none;
+  font-weight: bold; }
+
+section > h2::before {
+  /* number before each section title */
+  color: #fbaa79; }
+
+@media only screen and (min-width: 48rem) {
+  .summary p:first-child {
+    color: #FDD9C3;
+    font-size: 1.2rem; } }
+
+@media only screen and (min-width: 48rem) {
+  .summary p:last-child {
+    font-size: 2rem;
+    font-family: "Lobster", cursive; } }
+@media only screen and (min-width: 64rem) {
+  .summary p:last-child {
+    font-size: 3rem; } }
+
+@media only screen and (min-width: 64rem) {
+  .summary p a {
+    font-size: 3rem; } }
+
+@media only screen and (min-width: 48rem) {
+  .design-selection h3,
+  .design-archives h3,
+  .zen-resources h3 {
+    color: #ec6009; } }
+@media only screen and (min-width: 48rem) {
+  .design-selection li,
+  .design-selection li a,
+  .design-archives li,
+  .design-archives li a,
+  .zen-resources li,
+  .zen-resources li a {
+    color: #F99C62; } }
+@media only screen and (min-width: 48rem) {
+  .design-selection li a:hover,
+  .design-archives li a:hover,
+  .zen-resources li a:hover {
+    color: #FDD9C3; } }
+
+@media only screen and (min-width: 48rem) {
+  .requirements p {
+    font-size: 0.8rem;
+    color: #FDD9C3; } }
+@media only screen and (min-width: 48rem) {
+  .requirements p:last-child {
+    font-size: 1.6rem;
+    font-family: "Lobster", cursive; } }
+@media only screen and (min-width: 48rem) {
+  .requirements h3 {
+    color: #FDD9C3; } }
+
+footer a {
+  color: #106262;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
