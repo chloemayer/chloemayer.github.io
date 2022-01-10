@@ -9,17 +9,17 @@
 */
 body, html {
   width: 100%;
-  height: 100%;
-  margin: 0; }
-
-html {
-  background-color: white; }
+  height: 100%; }
 
 body {
-  margin: auto; }
-  @media only screen and (min-width: 768px) {
-    body {
-      max-width: 2000px; } }
+  display: flex;
+  flex-direction: column; }
+
+.portfolio-body {
+  height: auto; }
+
+main {
+  height: 100%; }
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif; }
@@ -33,25 +33,27 @@ li {
   list-style: none;
   padding: .5rem 1rem; }
 
-header {
-  background-color: white; }
+.navbar-brand {
+  padding: .5rem 1rem; }
 
-.sticky-top {
-  position: sticky;
-  top: -1px; }
+.navbar-toggler {
+  margin-right: .5rem; }
+
+nav .container-fluid {
+  padding: 1rem 0; }
 
 .index-main-wrapper {
   position: relative;
   background-image: url("/images/placeholder.jpg");
-  height: 100vh;
+  height: 100%;
   background-attachment: fixed;
   background-size: cover; }
 
 .index-h1 {
-  position: absolute;
-  top: 15rem;
-  left: 15rem;
-  font-size: 5rem;
+  position: relative;
+  top: 35%;
+  font-size: 4rem;
+  padding: 1rem;
   text-align: center;
   color: white; }
 
@@ -74,15 +76,69 @@ h3 {
 .card-img-top {
   border-radius: 50%;
   max-width: 300px; }
-  @media only screen and (min-width: 576px) {
-    .card-img-top {
-      max-width: 400px; } }
   .card-img-top:hover {
     box-shadow: 0px 0px 15px #7e7662; }
 
 a:hover {
-  color: #DBA00A; }
+  color: #d77a61; }
 
+.row {
+  justify-content: center;
+  margin-right: 0; }
+
+footer .container-fluid {
+  padding: 1.5rem 0; }
+
+.bi {
+  width: 2rem;
+  height: 2rem; }
+
+.bi-github {
+  color: #333; }
+
+.bi-wordpress {
+  color: #21759b; }
+
+.bi-facebook {
+  color: #0e76a8; }
+
+@media only screen and (min-width: 576px) {
+  .portfolio-body {
+    height: 100%; }
+
+  .container-fluid {
+    padding: 1rem 0; }
+
+  .me-auto {
+    margin-right: 0 !important; }
+
+  .navbar-expand-sm .navbar-collapse {
+    justify-content: flex-end; }
+
+  .index-h1 {
+    font-size: 5rem;
+    top: 40%; }
+
+  .row {
+    margin-right: calc(-.5 * var(--bs-gutter-x)); }
+
+  footer .container-fluid {
+    padding: 2rem 0; } }
+@media only screen and (min-width: 768px) {
+  .bi-github {
+    color: #333; }
+
+  .bi-wordpress {
+    color: #21759b; }
+
+  body {
+    max-width: 2000px; }
+
+  h3 {
+    font-size: 1.3rem; }
+
+  footer .container-fluid {
+    padding: 3rem 0 1.5rem 0; } }
 .main-wrapper {
   background-color: #AF9992;
   position: relative;
