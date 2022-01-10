@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imprima&family=Pacifico&display=swap');
 
-$S: 25rem; // 400px
-$M: 45rem; // 720px
+$XS: 25rem; // 400px
+$S: 45rem; // 720px
+$M: 53rem; // 850px
 
 @mixin mQ($canvas) {
-    @if $canvas == S {
+    @if $canvas == XS {
+        @media only screen and (min-width: $XS) {
+            @content;
+        }
+    }
+    @else if $canvas == S {
         @media only screen and (min-width: $S) {
             @content;
         }
@@ -44,7 +50,6 @@ body {
     }
 }
 
-
 //main both
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -70,6 +75,7 @@ header {
     position: sticky;
     top: -1px;
 }
+
 
 //index
 .index-main-wrapper {
@@ -99,16 +105,6 @@ header {
     text-align: center;
 }
 
-.portfolio-body-content {
-    display: grid;
-    grid-template-columns: 1fr; 
-    justify-items: center;
-}
-
-.portfolio-body-content-divs {
-    padding: 1rem 0;
-}
-
 .background-img {
     border-radius: 50%;
     width: 10rem;
@@ -123,22 +119,10 @@ header {
     }
 }
 
-.portfolio-body-content a { 
-    @include main-text;
-    font-size: 1.2rem;
-    @include mQ(M) {
-        font-size: 1.5rem;
-    }
-}
-
 a:hover {
     color: #DBA00A;
 }
 
-footer {
-    height: 5rem;
-    background-color: white;
-}
 
 
 //sig
@@ -160,56 +144,3 @@ footer {
     font-family: 'Pacifico', cursive;
 
 }
-
-/* .portfolio-main {
-    background-color: #DBCBA4;
-    padding: 2rem 0;
-    @include mQ(M) {
-        @include flex-column;
-        height: 100%;
-        justify-content: center;
-    }
-}
-
-.portfolio-h1 {
-    @include main-text;
-    @include mQ(M) {
-        font-size: 5rem;
-        margin-bottom: 0;
-    }
-}
-
-.portfolio-body-content {
-    @include mQ(M) {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 100%;
-    }
-
-}
-
-.portfolio-body-content-divs {
-
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    //transform: translate(0, -50%);
-    
-}
-
- .portfolio-body-content-div-1 {
-    background-image: url("/images/commerce.jpg");
-    background-size: cover;
-}
-
-.portfolio-body-content-div-2 {
-    background-image: url("/images/zen.jpg");
-    background-size: cover;
-}
-
-.portfolio-body-content-div-3 {
-    background-image: url("/images/preston.jpg");
-    background-size: cover;
-} */
