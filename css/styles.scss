@@ -44,38 +44,6 @@ body {
     }
 }
 
-// nav
-.container-fluid {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-}
-
-.navbar-collapse {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar-nav {
-    display: flex;
-    padding: 0;
-}
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-toggler {
-    
-    @include mQ(M) {
-        display: none;
-    }
-}
-
-.active {
-    color: red;
-}
 
 //main both
 h1, h2, h3 {
