@@ -272,8 +272,8 @@ footer .container-fluid {
         height: 60%;
         z-index: 1;
         position: absolute;
-        top: 5%;
-        left: 60%;
+        top: 15%;
+        right: 10%;
         display: block;
     }
 
@@ -312,15 +312,44 @@ footer .container-fluid {
 @include media-breakpoint-up(lg) {
     .img-container {
         top: 15%;
-        left: 55%;
     }
 }
 
 @include media-breakpoint-up(xl) {
     .img-container {
         top: 12%;
+        right: 18%;
+    }
+
+    .intro-container {
+        left: 2%;
+        max-width: 50rem;
+        margin-left: 2rem;
     }
 }
+
+@include media-breakpoint-up(xxl) {
+    .img-container {
+        top: 12%;
+        left: 750px;
+    }
+
+    .intro-container {
+        left: 60px;
+        max-width: 50rem;
+        margin-left: 2rem;
+    }
+}
+
+
+
+// $xs: 0;
+// $sm: 576px;
+// $md: 768px;
+// $lg: 992px;
+// $xl: 1200px,;
+// $xxl: 1400px;
+
 
 
 //sig

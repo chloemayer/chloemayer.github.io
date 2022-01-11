@@ -159,8 +159,8 @@ footer .container-fluid {
     height: 60%;
     z-index: 1;
     position: absolute;
-    top: 5%;
-    left: 60%;
+    top: 15%;
+    right: 10%;
     display: block; }
 
   .img-container img {
@@ -189,11 +189,25 @@ footer .container-fluid {
     padding: 3rem 0 1.5rem 0; } }
 @media only screen and (min-width: 992px) {
   .img-container {
-    top: 15%;
-    left: 55%; } }
+    top: 15%; } }
 @media only screen and (min-width: 1200px) {
   .img-container {
-    top: 12%; } }
+    top: 12%;
+    right: 18%; }
+
+  .intro-container {
+    left: 2%;
+    max-width: 50rem;
+    margin-left: 2rem; } }
+@media only screen and (min-width: 1400px) {
+  .img-container {
+    top: 12%;
+    left: 750px; }
+
+  .intro-container {
+    left: 60px;
+    max-width: 50rem;
+    margin-left: 2rem; } }
 .main-wrapper {
   background-color: #AF9992;
   position: relative;
