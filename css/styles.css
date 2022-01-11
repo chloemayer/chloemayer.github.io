@@ -124,8 +124,8 @@ footer .container-fluid {
 .bi-wordpress {
   color: #21759b; }
 
-.bi-facebook {
-  color: #0e76a8; }
+.bi-linkedin {
+  color: #0072b1; }
 
 @media only screen and (min-width: 576px) {
   .portfolio-body {
@@ -178,12 +178,6 @@ footer .container-fluid {
 
   .index-h1-p {
     width: 80%; }
-
-  .bi-github {
-    color: #333; }
-
-  .bi-wordpress {
-    color: #21759b; }
 
   body {
     max-width: 2000px; }
