@@ -44,7 +44,7 @@ nav .container-fluid {
 
 .index-main-wrapper {
   position: relative;
-  background-image: url("/images/placeholder.jpg");
+  background-image: url("/images/bkg.jpg");
   height: 100%;
   background-attachment: fixed;
   background-size: cover; }
