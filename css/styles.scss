@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Pacifico&display=swap');
-
 
 $xs: 0;
 $sm: 576px;
@@ -51,10 +49,7 @@ $xxl: 1400px;
 */
 
 
-@mixin main-text {
-    text-align: center;
-    color: white;
-}
+
 @mixin flex-column {
     display: flex;
     flex-direction: column;
@@ -114,8 +109,7 @@ nav .container-fluid {
 //index
 .index-main-wrapper {
     position: relative;
-    background-image: url("/images/bkg.jpg");
-    z-index: 0;
+    background-image: url("/images/fe-port-bkgd.jpg");
     height: 100%;
     background-attachment: fixed;
     background-size: cover;
@@ -123,7 +117,7 @@ nav .container-fluid {
 
 
 .intro-container {
-    background-color: #DBCBA4;
+    background-color: white;
     height: 75%;
     width: 70%;
     position: relative;
@@ -137,8 +131,8 @@ nav .container-fluid {
     font-size: 2rem;
     margin-bottom: 0;
     & mark {
-        background-color: whitesmoke;
-        color: black;
+        background-color: #82aba1;
+        color: white;
         line-height: 2;
         font-size: 1.8rem;
     }
@@ -339,35 +333,4 @@ footer .container-fluid {
         max-width: 50rem;
         margin-left: 2rem;
     }
-}
-
-
-
-// $xs: 0;
-// $sm: 576px;
-// $md: 768px;
-// $lg: 992px;
-// $xl: 1200px,;
-// $xxl: 1400px;
-
-
-
-//sig
-.main-wrapper {
-    background-color: #AF9992;
-    position: relative;
-    width: 600px;
-    height: 200px;
-}
-
-.posh, .baby, .basket {
-    font-family: 'Imprima', sans-serif;
-    display: inline;
-
-}
-
-
-.tag-wrapper {
-    font-family: 'Pacifico', cursive;
-
 }

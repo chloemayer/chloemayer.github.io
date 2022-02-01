@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Pacifico&display=swap");
 /* No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0)
 @include media-breakpoint-up(sm) { ... } 576px
 @include media-breakpoint-up(md) { ... } 768px
@@ -44,14 +43,13 @@ nav .container-fluid {
 
 .index-main-wrapper {
   position: relative;
-  background-image: url("/images/bkg.jpg");
-  z-index: 0;
+  background-image: url("/images/fe-port-bkgd.jpg");
   height: 100%;
   background-attachment: fixed;
   background-size: cover; }
 
 .intro-container {
-  background-color: #DBCBA4;
+  background-color: white;
   height: 75%;
   width: 70%;
   position: relative;
@@ -64,8 +62,8 @@ nav .container-fluid {
   font-size: 2rem;
   margin-bottom: 0; }
   .index-h1 mark {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #82aba1;
+    color: white;
     line-height: 2;
     font-size: 1.8rem; }
 
@@ -208,17 +206,5 @@ footer .container-fluid {
     left: 60px;
     max-width: 50rem;
     margin-left: 2rem; } }
-.main-wrapper {
-  background-color: #AF9992;
-  position: relative;
-  width: 600px;
-  height: 200px; }
-
-.posh, .baby, .basket {
-  font-family: 'Imprima', sans-serif;
-  display: inline; }
-
-.tag-wrapper {
-  font-family: 'Pacifico', cursive; }
 
 /*# sourceMappingURL=styles.css.map */
