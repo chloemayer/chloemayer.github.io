@@ -51,9 +51,10 @@ nav .container-fluid {
 .intro-container {
   background-color: white;
   height: 75%;
-  width: 70%;
+  width: 85%;
   position: relative;
-  top: 10%; }
+  top: 10%;
+  margin: 0 auto; }
 
 .index-h1 {
   padding: 2rem 2rem 0 1rem;
@@ -149,6 +150,10 @@ footer .container-fluid {
 
   .index-h1-p {
     padding: 0.5rem 2rem 2rem 1rem; }
+
+  .intro-container {
+    width: 70%;
+    margin: 0; }
 
   .row {
     margin-right: calc(-.5 * var(--bs-gutter-x)); }
